@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="İlker Efe İpek">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AB9FF2"/>
+      <stop offset="100%" stop-color="#FF6B9D"/>
+    </linearGradient>
+    <filter id="avatarGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#avatarGrad)"/>
+  <text
+    x="100" y="100"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Inter, system-ui, sans-serif"
+    font-weight="800"
+    font-size="86"
+    letter-spacing="-3"
+    fill="#0F0B14"
+  >İE</text>
+</svg>

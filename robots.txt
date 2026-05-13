@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ilkerefeipek.github.io/ilkerefeipek-portfolio/sitemap.xml

@@ -1,0 +1,84 @@
+{
+  "$schema": "Skills inventory. Used by skills.html bento grid + cv.html technical skills section. Sprint 4.6 added 'tier' field for editorial bento layout (hero/featured/standard/compact).",
+  "categories": [
+    {
+      "id": "language",
+      "labelTr": "Diller",
+      "labelEn": "Languages",
+      "iconClass": "icon-code"
+    },
+    {
+      "id": "framework",
+      "labelTr": "Framework'ler & Teknolojiler",
+      "labelEn": "Frameworks & Technologies",
+      "iconClass": "icon-stack"
+    },
+    {
+      "id": "database",
+      "labelTr": "Veritabanı Sistemleri",
+      "labelEn": "Database Systems",
+      "iconClass": "icon-db"
+    },
+    {
+      "id": "tool",
+      "labelTr": "Geliştirme Araçları",
+      "labelEn": "Development Tools",
+      "iconClass": "icon-tool"
+    },
+    {
+      "id": "pattern",
+      "labelTr": "Mimari & Tasarım Desenleri",
+      "labelEn": "Architectural & Design Patterns",
+      "iconClass": "icon-layers"
+    }
+  ],
+  "skills": [
+    { "id": "csharp",     "name": "C#",                       "category": "language",  "proficiency": 4, "tier": "hero",     "deviconClass": "devicon-csharp-plain" },
+    { "id": "js",         "name": "JavaScript",               "category": "language",  "proficiency": 3, "tier": "standard", "deviconClass": "devicon-javascript-plain" },
+    { "id": "sql",        "name": "SQL",                      "category": "language",  "proficiency": 4, "tier": "standard", "deviconClass": "devicon-microsoftsqlserver-plain" },
+    { "id": "html",       "name": "HTML5",                    "category": "language",  "proficiency": 4, "tier": "standard", "deviconClass": "devicon-html5-plain" },
+    { "id": "css",        "name": "CSS3",                     "category": "language",  "proficiency": 4, "tier": "standard", "deviconClass": "devicon-css3-plain" },
+    { "id": "php",        "name": "PHP",                      "category": "language",  "proficiency": 3, "tier": "standard", "deviconClass": "devicon-php-plain" },
+    { "id": "python",     "name": "Python",                   "category": "language",  "proficiency": 3, "tier": "standard", "deviconClass": "devicon-python-plain" },
+    { "id": "java",       "name": "Java",                     "category": "language",  "proficiency": 2, "tier": "standard", "deviconClass": "devicon-java-plain" },
+
+    { "id": "dotnet",     "name": ".NET Core",                "category": "framework", "proficiency": 4, "tier": "featured", "deviconClass": "devicon-dotnetcore-plain" },
+    { "id": "aspnet-mvc", "name": "ASP.NET MVC",              "category": "framework", "proficiency": 3, "tier": "featured", "deviconClass": "devicon-dot-net-plain" },
+    { "id": "ef-core",    "name": "Entity Framework Core",    "category": "framework", "proficiency": 3, "tier": "featured", "deviconClass": null },
+    { "id": "dapper",     "name": "Dapper",                   "category": "framework", "proficiency": 3, "tier": "compact",  "deviconClass": null },
+    { "id": "linq",       "name": "LINQ",                     "category": "framework", "proficiency": 4, "tier": "standard", "deviconClass": null },
+    { "id": "winforms",   "name": "Windows Forms",            "category": "framework", "proficiency": 4, "tier": "standard", "deviconClass": null },
+    { "id": "bootstrap",  "name": "Bootstrap",                "category": "framework", "proficiency": 3, "tier": "compact",  "deviconClass": "devicon-bootstrap-plain" },
+
+    { "id": "mssql",      "name": "Microsoft SQL Server",     "category": "database",  "proficiency": 4, "tier": "featured", "deviconClass": "devicon-microsoftsqlserver-plain" },
+    { "id": "azure-sql",  "name": "Azure SQL Database",       "category": "database",  "proficiency": 3, "tier": "standard", "deviconClass": "devicon-azuresqldatabase-plain" },
+    { "id": "tsql",       "name": "T-SQL",                    "category": "database",  "proficiency": 4, "tier": "standard", "deviconClass": null },
+    { "id": "oracle",     "name": "Oracle Database",          "category": "database",  "proficiency": 3, "tier": "compact",  "deviconClass": "devicon-oracle-original" },
+
+    { "id": "vs",         "name": "Visual Studio",            "category": "tool",      "proficiency": 4, "tier": "standard", "deviconClass": "devicon-visualstudio-plain" },
+    { "id": "vscode",     "name": "Visual Studio Code",       "category": "tool",      "proficiency": 4, "tier": "compact",  "deviconClass": "devicon-vscode-plain" },
+    { "id": "intellij",   "name": "IntelliJ IDEA",            "category": "tool",      "proficiency": 3, "tier": "compact",  "deviconClass": "devicon-intellij-plain" },
+    { "id": "docker",     "name": "Docker",                   "category": "tool",      "proficiency": 2, "tier": "standard", "deviconClass": "devicon-docker-plain" },
+    { "id": "ssms",       "name": "SQL Server Management Studio", "category": "tool",  "proficiency": 4, "tier": "standard", "deviconClass": null },
+    { "id": "excel",      "name": "Excel",                    "category": "tool",      "proficiency": 3, "tier": "compact",  "deviconClass": null },
+    { "id": "jira",       "name": "Jira",                     "category": "tool",      "proficiency": 3, "tier": "compact",  "deviconClass": "devicon-jira-plain" },
+
+    { "id": "layered",    "name": "Layered Architecture (N-Tier)", "category": "pattern", "proficiency": 4, "tier": "standard", "deviconClass": null },
+    { "id": "repo",       "name": "Repository Pattern",       "category": "pattern",   "proficiency": 4, "tier": "standard", "deviconClass": null },
+    { "id": "mvc",        "name": "MVC",                      "category": "pattern",   "proficiency": 3, "tier": "standard", "deviconClass": null },
+    { "id": "solid",      "name": "SOLID Principles",         "category": "pattern",   "proficiency": 4, "tier": "standard", "deviconClass": null }
+  ],
+  "constellationEdges": [
+    ["csharp", "dotnet"], ["csharp", "aspnet-mvc"], ["csharp", "ef-core"],
+    ["csharp", "dapper"], ["csharp", "linq"], ["csharp", "winforms"],
+    ["dotnet", "aspnet-mvc"], ["dotnet", "ef-core"], ["dotnet", "dapper"],
+    ["dotnet", "mvc"], ["dotnet", "solid"],
+    ["sql", "mssql"], ["sql", "tsql"], ["sql", "azure-sql"], ["sql", "oracle"],
+    ["mssql", "tsql"], ["mssql", "azure-sql"], ["mssql", "ssms"],
+    ["layered", "repo"], ["layered", "solid"], ["repo", "mvc"],
+    ["mvc", "aspnet-mvc"], ["mvc", "solid"],
+    ["html", "css"], ["html", "js"], ["css", "js"], ["css", "bootstrap"],
+    ["js", "bootstrap"],
+    ["vs", "csharp"], ["vs", "dotnet"], ["vscode", "js"], ["vscode", "html"]
+  ]
+}

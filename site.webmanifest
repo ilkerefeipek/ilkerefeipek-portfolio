@@ -1,0 +1,26 @@
+{
+  "name": "İlker Efe İpek — Portfolio",
+  "short_name": "İE Portfolio",
+  "description": "Backend ve veritabanı odaklı .NET geliştirici. Proje portföyü, beceriler, CV ve iletişim.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0F0B14",
+  "theme_color": "#AB9FF2",
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/avatar-initials.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "lang": "tr",
+  "dir": "ltr"
+}

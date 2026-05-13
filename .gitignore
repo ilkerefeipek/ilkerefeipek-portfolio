@@ -1,0 +1,53 @@
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Node (sadece tests/ altında kullanılıyor)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# Playwright
+tests/test-results/
+tests/playwright-report/
+tests/blob-report/
+tests/.cache/
+tests/screenshots/baseline-mismatch/
+
+# Lighthouse CI
+.lighthouseci/
+lhci_reports/
+tests/.lighthouseci/
+
+# Build artifacts
+dist/
+build/
+.parcel-cache/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs / temp
+*.log
+*.tmp
+.cache/
+
+# OS
+desktop.ini
+
+# Personal AI tooling — never commit
+.claude/
+CLAUDE.md
+CLAUDE_*
+
+# Internal project notes / audit artifacts — outputs regenerable from tests
+docs/
+tests/audit/

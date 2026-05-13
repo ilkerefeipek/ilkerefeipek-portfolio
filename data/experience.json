@@ -1,0 +1,60 @@
+[
+  {
+    "id": "yazilim-marketi",
+    "displayOrder": 1,
+    "company": "Yazılım Marketi",
+    "locationTr": "İzmir, Türkiye",
+    "locationEn": "Izmir, Türkiye",
+    "roleTr": "Yazılım Geliştirme Stajyeri",
+    "roleEn": "Software Development Intern",
+    "startDate": "2024-02",
+    "endDate": "2024-10",
+    "durationMonths": 8,
+    "durationLabelTr": "Şubat 2024 – Ekim 2024 · 8 ay",
+    "durationLabelEn": "February 2024 – October 2024 · 8 months",
+    "highlightsTr": [
+      "Senior geliştiricilerin gözetiminde masaüstü ve web tabanlı uygulamaların geliştirilmesine katkıda bulundu.",
+      "C#, .NET ve veritabanı operasyonlarında uygulamalı deneyim kazandı.",
+      "Arayüz tasarımı, hata ayıklama ve küçük çaplı yeni özellik geliştirme görevlerinde rol aldı.",
+      "Haftalık kod incelemesi (code review) oturumlarına ve proje toplantılarına katılarak işbirliği ve sürüm kontrolü becerilerini geliştirdi."
+    ],
+    "highlightsEn": [
+      "Contributed to the development of desktop and web-based applications under the supervision of senior developers.",
+      "Gained practical experience in C#, .NET and database operations.",
+      "Took part in UI design, debugging and minor feature implementation tasks.",
+      "Participated in weekly code reviews and project meetings, improving collaboration and version control skills."
+    ],
+    "techStack": ["C#", ".NET", "SQL Server", "Windows Forms"]
+  },
+  {
+    "id": "innosa-yazilim",
+    "displayOrder": 2,
+    "company": "İnnosa Yazılım",
+    "locationTr": "İzmir, Türkiye",
+    "locationEn": "Izmir, Türkiye",
+    "roleTr": "Yazılım Geliştirme Stajyeri",
+    "roleEn": "Software Development Intern",
+    "startDate": "2025-06",
+    "endDate": "2025-08",
+    "durationMonths": 3,
+    "durationLabelTr": "Haziran 2025 – Ağustos 2025 · 3 ay",
+    "durationLabelEn": "June 2025 – August 2025 · 3 months",
+    "highlightsTr": [
+      "Oracle Veritabanı kullanan bir yönetim panelinin (admin panel) web tabanlı geliştirilmesinde görev aldı.",
+      "Veritabanı varlıkları için uçtan uca CRUD işlemlerini kullanıcı dostu bir arayüz üzerinden uyguladı.",
+      "Oracle üzerinde veriyi etkin biçimde almak ve manipüle etmek için SQL sorguları tasarladı ve çalıştırdı.",
+      "Veri tutarlılığı ve performansı için backend mantığını veritabanı operasyonlarıyla entegre etti.",
+      "Senior geliştiricilerle kod incelemesi ve haftalık toplantılar üzerinden işbirliği yaptı; yazılım geliştirme ve takım çalışması becerilerini geliştirdi.",
+      "Veritabanı odaklı uygulama geliştirme ve veri yönetimi iş akışlarında pratik deneyim edindi."
+    ],
+    "highlightsEn": [
+      "Developed a web-based admin panel for managing application data using Oracle Database.",
+      "Implemented full CRUD (Create, Read, Update, Delete) operations for database entities through a user-friendly interface.",
+      "Designed and executed SQL queries to retrieve and manipulate data efficiently in Oracle Database.",
+      "Integrated backend logic with database operations to ensure data consistency and performance.",
+      "Collaborated with senior developers through code reviews and weekly meetings, improving software development and teamwork skills.",
+      "Gained hands-on experience in database-driven application development and data management workflows."
+    ],
+    "techStack": ["Oracle Database", "SQL", "Web (admin panel)"]
+  }
+]

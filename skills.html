@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html lang="tr" data-page="skills">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.skillsTitle">Beceriler · İlker Efe İpek</title>
+  <meta name="description" data-i18n-attr="content:meta.skillsDescription" content="C#, .NET Core, SQL Server, ASP.NET MVC, Layered Architecture, Repository Pattern. 15 sertifika.">
+
+  <link rel="canonical" href="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/skills.html">
+  <link rel="alternate" hreflang="tr" href="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/skills.html">
+  <link rel="alternate" hreflang="en" href="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/skills.html?lang=en">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/skills.html">
+  <meta property="og:title" data-i18n-attr="content:meta.skillsTitle" content="Beceriler · İlker Efe İpek">
+  <meta property="og:image" content="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/assets/images/og-cover.png">
+
+  <meta name="theme-color" content="#0F0B14">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <link rel="preload" href="assets/fonts/inter/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles/bundle.css">
+
+  <script src="scripts/lang-init.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skipToMain">Ana içeriğe atla</a>
+
+  <header class="nav-bar" role="banner">
+    <div class="container">
+      <a class="nav-logo" href="index.html" aria-label="İlker Efe İpek — Ana sayfa" data-i18n-attr="aria-label:nav.logoAria">
+        <img class="nav-logo-mark" src="assets/images/favicon.svg" alt="" width="32" height="32" aria-hidden="true">
+        <span class="nav-logo-name">İlker Efe İpek</span>
+      </a>
+      <nav aria-label="Primary" class="nav-primary" data-i18n-attr="aria-label:nav.primaryNavAria">
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Hakkımda</a></li>
+          <li><a href="skills.html" aria-current="page" data-i18n="nav.skills">Beceriler</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projeler</a></li>
+          <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language selection" data-i18n-attr="aria-label:nav.langSwitchAria">
+          <button type="button" data-lang-toggle data-lang="tr" aria-pressed="true">TR</button>
+          <button type="button" data-lang-toggle data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="nav-toggle" data-nav-open aria-label="Menüyü aç" data-i18n-attr="aria-label:nav.menuOpen" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-drawer" data-nav-drawer aria-hidden="true">
+    <div class="cluster" style="justify-content: flex-end;">
+      <button type="button" class="btn-icon" data-nav-close aria-label="Menüyü kapat" data-i18n-attr="aria-label:nav.menuClose">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+      <li><a href="about.html" data-i18n="nav.about">Hakkımda</a></li>
+      <li><a href="skills.html" data-i18n="nav.skills">Beceriler</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects">Projeler</a></li>
+      <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+    </ul>
+  </div>
+
+  <div class="cursor-blob" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <main id="main" class="section">
+    <div class="container">
+      <p class="section-eyebrow" data-i18n="skills.eyebrow">// APPLICATION_LAYER</p>
+      <h1 data-i18n="skills.title">Beceriler</h1>
+      <p class="lead" style="margin-top: var(--sp-4);" data-i18n="skills.lead">Diller, framework'ler, veritabanları ve mimari prensipler — birbirleriyle nasıl konuştukları dahil.</p>
+
+      <div class="sk-grid" data-sk-grid>
+
+        <!-- Hero (C#) -->
+        <a class="sk-cell sk-cell--hero" href="projects.html?skill=csharp" data-skill="csharp">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/csharp.svg" alt="" width="64" height="64" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">C#</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.csharp">5+ projede primary stack. ASP.NET MVC + EF Core + layered architecture standardı.</p>
+          <ul class="sk-meta">
+            <li class="sk-chip" data-i18n="skills.heroMeta.tagline">Daily driver</li>
+            <li class="sk-chip" data-i18n="skills.heroMeta.since">Since 2023</li>
+            <li class="sk-chip" data-i18n="skills.heroMeta.projects">5+ projects</li>
+          </ul>
+        </a>
+
+        <!-- Featured: .NET Core -->
+        <a class="sk-cell sk-cell--featured" href="projects.html?skill=dotnet" data-skill="dotnet">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/dotnet.svg" alt="" width="48" height="48" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.framework">FRAMEWORK</span>
+          </header>
+          <h3 class="sk-name">.NET Core</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.dotnet">Web ve desktop projelerin runtime'ı. ASP.NET MVC + Worker Service deneyimi.</p>
+        </a>
+
+        <!-- Featured: ASP.NET MVC -->
+        <a class="sk-cell sk-cell--featured" href="projects.html?skill=aspnet-mvc" data-skill="aspnet-mvc">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/aspnet-mvc.svg" alt="" width="48" height="48" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.framework">FRAMEWORK</span>
+          </header>
+          <h3 class="sk-name">ASP.NET MVC</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.aspnet-mvc">Server-rendered + REST endpoint kombinasyonu. Layered + Repository pattern.</p>
+        </a>
+
+        <!-- Featured: SQL Server -->
+        <a class="sk-cell sk-cell--featured" href="projects.html?skill=mssql" data-skill="mssql">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/mssql.svg" alt="" width="48" height="48" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.database">VERİTABANI</span>
+          </header>
+          <h3 class="sk-name">SQL Server</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.mssql">Schema tasarımı, T-SQL, stored procedure, sorgu optimizasyonu.</p>
+        </a>
+
+        <!-- Featured: EF Core -->
+        <a class="sk-cell sk-cell--featured" href="projects.html?skill=ef-core" data-skill="ef-core">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/ef-core.svg" alt="" width="48" height="48" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.framework">FRAMEWORK</span>
+          </header>
+          <h3 class="sk-name">EF Core</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.ef-core">ORM standardım. Migration, LINQ, change tracking, performance tuning.</p>
+        </a>
+
+        <!-- 15 standard cells -->
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=sql" data-skill="sql">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/sql.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">SQL</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.sql">Tüm veritabanı projelerinin ortak dili.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=tsql" data-skill="tsql">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/tsql.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.database">VERİTABANI</span>
+          </header>
+          <h3 class="sk-name">T-SQL</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.tsql">Stored procedure, function, trigger — MSSQL'de iş mantığı katmanı.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=azure-sql" data-skill="azure-sql">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/azure-sql.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.database">VERİTABANI</span>
+          </header>
+          <h3 class="sk-name">Azure SQL</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.azure-sql">MSSQL'in cloud versiyonu. Connection string + DTU yönetimi.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=js" data-skill="js">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/js.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">JavaScript</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.js">Frontend interaktivite. Vanilla DOM, fetch, IntersectionObserver.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=html" data-skill="html">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/html.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">HTML5</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.html">Semantik markup, ARIA, form validation.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=css" data-skill="css">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/css.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">CSS3</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.css">Grid, flexbox, custom properties, container queries.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=php" data-skill="php">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/php.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">PHP</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.php">Event Registration System projesinde web backend dili. Form handling, MySQL bağlantısı.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=python" data-skill="python">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/python.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">Python</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.python">Veri işleme + automation + script geliştirme. Akademik projelerde data analysis.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=java" data-skill="java">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/java.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.language">DİL</span>
+          </header>
+          <h3 class="sk-name">Java</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.java">OOP temelleri + cross-platform alıştırmalar. Akademik müfredat üzerinden.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=linq" data-skill="linq">
+          <header class="sk-cell-head">
+            <img class="sk-logo sk-logo--mono" src="assets/icons/skills/linq.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.framework">FRAMEWORK</span>
+          </header>
+          <h3 class="sk-name">LINQ</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.linq">Collection sorgulama + EF Core query composition.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=vs" data-skill="vs">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/vs.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.tool">ARAÇ</span>
+          </header>
+          <h3 class="sk-name">Visual Studio</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.vs">Backend C# + .NET projeleri için ana IDE.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=ssms" data-skill="ssms">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/ssms.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.tool">ARAÇ</span>
+          </header>
+          <h3 class="sk-name">SSMS</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.ssms">MSSQL şema yönetimi + sorgu profilleme.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=winforms" data-skill="winforms">
+          <header class="sk-cell-head">
+            <img class="sk-logo sk-logo--mono" src="assets/icons/skills/winforms.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.framework">FRAMEWORK</span>
+          </header>
+          <h3 class="sk-name">Windows Forms</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.winforms">Stock Management projesinin desktop UI katmanı.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=docker" data-skill="docker">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/docker.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.tool">ARAÇ</span>
+          </header>
+          <h3 class="sk-name">Docker</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.docker">Containerization temel + image build/run.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=layered" data-skill="layered">
+          <header class="sk-cell-head">
+            <img class="sk-logo sk-logo--mono" src="assets/icons/skills/layered.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.pattern">MİMARİ</span>
+          </header>
+          <h3 class="sk-name">Layered (N-Tier)</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.layered">N-Tier ayrım: UI / Business / Data Access — varsayılan mimarim.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=repo" data-skill="repo">
+          <header class="sk-cell-head">
+            <img class="sk-logo sk-logo--mono" src="assets/icons/skills/repo.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.pattern">MİMARİ</span>
+          </header>
+          <h3 class="sk-name">Repository</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.repo">DAL soyutlama. EF Core + Dapper üzerinde uniform interface.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=solid" data-skill="solid">
+          <header class="sk-cell-head">
+            <img class="sk-logo sk-logo--mono" src="assets/icons/skills/solid.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.pattern">MİMARİ</span>
+          </header>
+          <h3 class="sk-name">SOLID</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.solid">OOP disiplini. SRP + DI + interface segregation rutinim.</p>
+        </a>
+        <a class="sk-cell sk-cell--standard" href="projects.html?skill=mvc" data-skill="mvc">
+          <header class="sk-cell-head">
+            <img class="sk-logo sk-logo--mono" src="assets/icons/skills/mvc.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.pattern">MİMARİ</span>
+          </header>
+          <h3 class="sk-name">MVC</h3>
+          <p class="sk-desc" data-i18n="skills.cellDescriptors.mvc">ASP.NET MVC + WPF gibi UI mimarilerinin temeli.</p>
+        </a>
+
+        <!-- 5 compact cells -->
+        <a class="sk-cell sk-cell--compact" href="projects.html?skill=dapper" data-skill="dapper">
+          <header class="sk-cell-head">
+            <img class="sk-logo sk-logo--mono" src="assets/icons/skills/dapper.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.framework">FRAMEWORK</span>
+          </header>
+          <h3 class="sk-name">Dapper</h3>
+        </a>
+        <a class="sk-cell sk-cell--compact" href="projects.html?skill=bootstrap" data-skill="bootstrap">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/bootstrap.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.framework">FRAMEWORK</span>
+          </header>
+          <h3 class="sk-name">Bootstrap</h3>
+        </a>
+        <a class="sk-cell sk-cell--compact" href="projects.html?skill=oracle" data-skill="oracle">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/oracle.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.database">VERİTABANI</span>
+          </header>
+          <h3 class="sk-name">Oracle DB</h3>
+        </a>
+        <a class="sk-cell sk-cell--compact" href="projects.html?skill=vscode" data-skill="vscode">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/vscode.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.tool">ARAÇ</span>
+          </header>
+          <h3 class="sk-name">VS Code</h3>
+        </a>
+        <a class="sk-cell sk-cell--compact" href="projects.html?skill=intellij" data-skill="intellij">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/intellij.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.tool">ARAÇ</span>
+          </header>
+          <h3 class="sk-name">IntelliJ IDEA</h3>
+        </a>
+        <a class="sk-cell sk-cell--compact" href="projects.html?skill=excel" data-skill="excel">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/excel.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.tool">ARAÇ</span>
+          </header>
+          <h3 class="sk-name">Excel</h3>
+        </a>
+        <a class="sk-cell sk-cell--compact" href="projects.html?skill=jira" data-skill="jira">
+          <header class="sk-cell-head">
+            <img class="sk-logo" src="assets/icons/skills/jira.svg" alt="" width="32" height="32" loading="lazy">
+            <span class="sk-eyebrow" data-i18n="skills.categoriesShort.tool">ARAÇ</span>
+          </header>
+          <h3 class="sk-name">Jira</h3>
+        </a>
+
+      </div>
+
+      <!-- Certificates -->
+      <section class="section" aria-labelledby="certificates-title" id="certificates">
+        <h2 id="certificates-title" data-i18n="skills.certificatesTitle">Sertifikalar</h2>
+        <p class="card-meta" style="margin-top: var(--sp-2);" data-i18n="skills.certificatesSubtitle">15 sertifika · 2022 – 2026</p>
+
+        <ul class="certificates-list" style="margin-top: var(--sp-8);" data-certificates-list data-reveal-stagger>
+          <!-- 15 items, populated by JS; SSR fallback: -->
+          <li class="certificate-item">
+            <span class="certificate-year">2022</span>
+            <div>
+              <p class="certificate-title">Windows Forms ile Arayüz Geliştirme ve Gömülü CRUD Sistemleri</p>
+              <p class="certificate-issuer">Udemy</p>
+            </div>
+            <span class="pill skill-pill">framework</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2022</span>
+            <div>
+              <p class="certificate-title">Mühendislik Uygulamalarında Katmanlı Mimari ve N-Tier Tasarımı</p>
+              <p class="certificate-issuer">Academind</p>
+            </div>
+            <span class="pill skill-pill">pattern</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2022</span>
+            <div>
+              <p class="certificate-title">C# içinde LINQ, İstisna Yönetimi ve Sistem Loglaması</p>
+              <p class="certificate-issuer">Educative.io</p>
+            </div>
+            <span class="pill skill-pill">framework</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2023</span>
+            <div>
+              <p class="certificate-title">İleri Düzey Transact-SQL ve Saklı Yordam Programlama</p>
+              <p class="certificate-issuer">Codecademy</p>
+            </div>
+            <span class="pill skill-pill">database</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2023</span>
+            <div>
+              <p class="certificate-title">Veri Analizi ve Optimizasyon için SQL Server & Azure SQL</p>
+              <p class="certificate-issuer">Microsoft Learn</p>
+            </div>
+            <span class="pill skill-pill">database</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2023</span>
+            <div>
+              <p class="certificate-title">T-SQL ile Veritabanı Tasarımı ve Sorgu Optimizasyonu</p>
+              <p class="certificate-issuer">Microsoft Learn</p>
+            </div>
+            <span class="pill skill-pill">database</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2023</span>
+            <div>
+              <p class="certificate-title">Mühendislik Arayüzleri için Front-End Geliştirme</p>
+              <p class="certificate-issuer">Udemy</p>
+            </div>
+            <span class="pill skill-pill">frontend</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2023</span>
+            <div>
+              <p class="certificate-title">İşbirlikçi Projelerde Sürüm Kontrolü için Git ve GitHub</p>
+              <p class="certificate-issuer">BTK Akademi</p>
+            </div>
+            <span class="pill skill-pill">tool</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2024</span>
+            <div>
+              <p class="certificate-title">ASP.NET Core MVC ile RESTful API Geliştirme</p>
+              <p class="certificate-issuer">LinkedIn Learning</p>
+            </div>
+            <span class="pill skill-pill">framework</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2024</span>
+            <div>
+              <p class="certificate-title">Ölçeklenebilir Sistemler için Yazılım Tasarım Desenleri (SOLID, GoF)</p>
+              <p class="certificate-issuer">Coursera</p>
+            </div>
+            <span class="pill skill-pill">pattern</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2024</span>
+            <div>
+              <p class="certificate-title">.NET Projelerinde Clean Architecture ve Dependency Injection</p>
+              <p class="certificate-issuer">Pluralsight</p>
+            </div>
+            <span class="pill skill-pill">pattern</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2024</span>
+            <div>
+              <p class="certificate-title">Mikroservis Mimarisi ve Docker Konteynerleştirme</p>
+              <p class="certificate-issuer">BTK Akademi</p>
+            </div>
+            <span class="pill skill-pill">tool</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2024</span>
+            <div>
+              <p class="certificate-title">.NET Geliştirici Programı</p>
+              <p class="certificate-issuer">I-Akademi / Microsoft</p>
+            </div>
+            <span class="pill skill-pill">framework</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2024</span>
+            <div>
+              <p class="certificate-title">SQL Veritabanı Geliştirme & Transact-SQL ile Veri Sorgulama</p>
+              <p class="certificate-issuer">I-Akademi / Microsoft</p>
+            </div>
+            <span class="pill skill-pill">database</span>
+          </li>
+          <li class="certificate-item">
+            <span class="certificate-year">2026</span>
+            <div>
+              <p class="certificate-title">Anthropic Claude Akademisi — Tüm Kurs Tamamlama</p>
+              <p class="certificate-issuer">Anthropic</p>
+            </div>
+            <span class="pill skill-pill">ai</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Soft skills -->
+      <section class="section" aria-labelledby="soft-skills-title">
+        <h2 id="soft-skills-title" data-i18n="skills.softSkillsTitle">Soft Skills</h2>
+        <p style="color: var(--text-secondary); margin-top: var(--sp-2);" data-i18n="skills.softSkillsLead">Staj ve kulüp deneyimimden somut çıkanlar:</p>
+
+        <div class="soft-skills-grid" style="margin-top: var(--sp-8);" data-reveal-stagger>
+          <article class="card">
+            <h3 data-i18n="skills.softSkills.0.title">Code Review</h3>
+            <p style="color: var(--text-secondary); margin-top: var(--sp-2);" data-i18n="skills.softSkills.0.summary">Yazılım Marketi ve İnnosa stajlarında haftalık peer review oturumları.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="skills.softSkills.1.title">Git Workflow</h3>
+            <p style="color: var(--text-secondary); margin-top: var(--sp-2);" data-i18n="skills.softSkills.1.summary">Branch stratejisi, PR akışı, çakışma çözümü — BTK Akademi sertifikalı.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="skills.softSkills.2.title">Takım İçi İletişim</h3>
+            <p style="color: var(--text-secondary); margin-top: var(--sp-2);" data-i18n="skills.softSkills.2.summary">Senior developer'larla mentor/mentee dinamiği, haftalık proje toplantıları.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="skills.softSkills.3.title">Dokümantasyon</h3>
+            <p style="color: var(--text-secondary); margin-top: var(--sp-2);" data-i18n="skills.softSkills.3.summary">Veritabanı şemaları, API endpoint'leri ve mimari kararlar için yazılı doküman üretimi.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="skills.softSkills.4.title">Problem Çözme</h3>
+            <p style="color: var(--text-secondary); margin-top: var(--sp-2);" data-i18n="skills.softSkills.4.summary">Hata izolasyonu, log analizi, transaction-based rollback senaryoları.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="footer-name">İlker Efe İpek</span>
+        <span class="footer-tagline" data-i18n="footer.tagline">Compiled in 4 layers.</span>
+      </div>
+      <div class="footer-credits">
+        <a href="mailto:ilkerefeipek00@gmail.com">ilkerefeipek00@gmail.com</a>
+        <div class="footer-links">
+          <span class="placeholder-pill pill" data-placeholder="linkedin" data-i18n="placeholderMicrocopy.linkedin">LinkedIn (yakında)</span>
+          <span class="placeholder-pill pill" data-placeholder="github" data-i18n="placeholderMicrocopy.github">GitHub (yakında)</span>
+        </div>
+        <p class="footer-rights">
+          © 2026 İlker Efe İpek · <span data-i18n="footer.stackCredit">HTML · CSS · Vanilla JS ile inşa edildi</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

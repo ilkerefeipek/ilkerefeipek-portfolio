@@ -1,0 +1,536 @@
+{
+  "$schema": "Content master file. Top-level non-i18n data + per-language UI copy. Loaded by scripts/core/i18n.js.",
+  "personal": {
+    "name": "İlker Efe İpek",
+    "initials": "İE",
+    "email": "ilkerefeipek00@gmail.com",
+    "phone": "+90 532 491 11 07",
+    "phonePublic": false
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/ilker-efe-ipek-b261122b9/",
+    "github": "https://github.com/ilkerefeipek",
+    "projectRepos": {
+      "stockManagement": "https://github.com/ilkerefeipek/proje1",
+      "ecommerceDb": "https://github.com/ilkerefeipek/proje2",
+      "eventRegistration": "https://github.com/ilkerefeipek/proje3",
+      "portfolio": "https://github.com/ilkerefeipek/ilkerefeipek-portfolio"
+    },
+    "web3formsKey": "e5b1b57e-dd08-43b6-8c21-451289e9dab6"
+  },
+  "siteUrl": "https://ilkerefeipek.github.io/ilkerefeipek-portfolio/",
+  "tr": {
+    "meta": {
+      "siteTitle": "İlker Efe İpek — Backend & Veritabanı Geliştirici",
+      "aboutTitle": "Hakkımda · İlker Efe İpek",
+      "skillsTitle": "Beceriler · İlker Efe İpek",
+      "projectsTitle": "Projeler · İlker Efe İpek",
+      "cvTitle": "CV · İlker Efe İpek",
+      "contactTitle": "İletişim · İlker Efe İpek",
+      "notFoundTitle": "Layer not found · İlker Efe İpek",
+      "homeDescription": "Katmanlı mimari ve veritabanı tasarımı odaklı .NET geliştirici. Proje portföyü, beceriler, CV ve iletişim.",
+      "aboutDescription": "İzmir Ekonomi Üniversitesi öğrencisi, .NET geliştirici. Eğitim, staj deneyimleri, ilgi alanları ve yaklaşım.",
+      "skillsDescription": "C#, .NET Core, SQL Server, ASP.NET MVC, Layered Architecture, Repository Pattern. 15 sertifika.",
+      "projectsDescription": "Stock Management System, E-Commerce DB, Event Registration ve daha fazlası. Mimari, teknoloji ve sonuçlar.",
+      "cvDescription": "Türkçe ve İngilizce CV — online görüntüle veya PDF olarak indir.",
+      "contactDescription": "E-posta, telefon, LinkedIn, GitHub. Mesaj formu (Web3Forms).",
+      "notFoundDescription": "Aradığınız sayfa bulunamadı."
+    },
+    "personal": {
+      "location": "İzmir, Türkiye",
+      "currentRole": "Önlisans Öğrencisi · Bilgisayar Programcılığı"
+    },
+    "nav": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımda",
+      "skills": "Beceriler",
+      "projects": "Projeler",
+      "cv": "CV",
+      "contact": "İletişim",
+      "menuOpen": "Menüyü aç",
+      "menuClose": "Menüyü kapat",
+      "skipToMain": "Ana içeriğe atla",
+      "logoAria": "İlker Efe İpek — Ana sayfa",
+      "langSwitchAria": "Dil seçimi",
+      "primaryNavAria": "Birincil"
+    },
+    "hero": {
+      "eyebrow": "Merhaba, ben",
+      "tagline": "Backend ve veritabanı odaklı .NET geliştirici.",
+      "subtitle": "İzmir Ekonomi Üniversitesi Bilgisayar Programcılığı öğrencisi.",
+      "metrics": [
+        {
+          "label": "yıl kod"
+        },
+        {
+          "label": "ay staj"
+        },
+        {
+          "label": "sertifika"
+        },
+        {
+          "label": "GPA"
+        }
+      ],
+      "ctaPrimary": "Projeleri Gör",
+      "ctaSecondary": "CV İndir"
+    },
+    "home": {
+      "whatIBuildEyebrow": "// CAPABILITIES",
+      "whatIBuildTitle": "Ne inşa ediyorum",
+      "whatIBuildIntro": "Üç katmanda yetkinlik: backend mantığı, frontend etkileşimi, veritabanı temelleri.",
+      "capabilities": [
+        {
+          "title": "Backend",
+          "summary": "C# / .NET Core ile RESTful servisler, repository pattern, EF Core, transaction yönetimi."
+        },
+        {
+          "title": "Frontend",
+          "summary": "Semantic HTML, modüler CSS, vanilla JS. Erişilebilirlik ve performans öncelikli arayüzler."
+        },
+        {
+          "title": "Database",
+          "summary": "MSSQL & Azure SQL üzerinde 3NF tasarım, saklı yordamlar, tetikleyiciler, sorgu optimizasyonu."
+        }
+      ],
+      "featuredProjectEyebrow": "// FEATURED",
+      "featuredProjectTitle": "Öne çıkan proje",
+      "featuredProjectCta": "Tüm projeler",
+      "statsEyebrow": "// METRICS",
+      "statsTitle": "Sayılarla",
+      "statsLabels": {
+        "codeYears": "Yıllık aktif kod yazma",
+        "internshipMonths": "Ay profesyonel staj",
+        "certificates": "Sertifika (2022 – 2026)"
+      },
+      "ctaBannerTitle": "Bir şey üzerinde çalışıyor musunuz?",
+      "ctaBannerSubtitle": "Konuşalım — özellikle .NET, veritabanı tasarımı veya stajlık fırsatları için.",
+      "ctaBannerButton": "İletişime geç"
+    },
+    "about": {
+      "eyebrow": "// PRESENTATION_LAYER",
+      "title": "Hakkımda",
+      "lead": "Yazılım geliştirirken katmanlı mimari, repository pattern ve SOLID prensiplerini önceleyen bir yaklaşım benimsiyorum.",
+      "bio": "İzmir Ekonomi Üniversitesi'nde Bilgisayar Programcılığı önlisans öğrencisiyim. 2023'te eğitime başladım; İngilizce hazırlık programını yarım dönemde tamamladım. İlk yılım sonunda yazılım geliştirme alanında profesyonel bir staj tamamladım. İkinci yılıma yeni başlıyorum.\n\nEğitim sürecinde .NET geliştirme, SQL Server ve full-stack web teknolojileri üzerine ileri seviye, sektör odaklı çalışmalar yaptım. Hedefim, büyüyen teknik birikimimi ve uygulamalı proje deneyimimi yenilikçi yazılım çözümlerine — özellikle Ar-Ge odaklı ortamlara — katkı vermek için kullanmak.",
+      "approachTitle": "Yaklaşım",
+      "approach": "Backend tarafında veritabanı tasarımı, sorgu optimizasyonu ve katmanlı mimari ilgi alanlarımın merkezinde. Frontend tarafında temiz markup, semantic HTML ve sürdürülebilir CSS ile kullanıcı arayüzleri kuruyorum. Her iki tarafta da kod kalitesini, takım içi iletişimi ve dokümantasyonu önemsiyorum.",
+      "educationTitle": "Eğitim",
+      "experienceTitle": "Deneyim",
+      "languagesTitle": "Yabancı Diller",
+      "interestsTitle": "İlgi Alanları",
+      "interests": "Boş zamanlarımda gitar çalıyor ve beste yapıyorum. Basketbol oynuyorum, müzik teorisi ile ilgileniyorum. Yeni teknolojileri keşfetmek ve kullanıcı deneyimi odaklı yan projeler üretmek de önemli ilgi alanlarım.",
+      "clubTitle": "Kulüp",
+      "club": "Rotaract Club of Konak — aktif üye. Toplum hizmeti, gençlik liderliği ve uluslararası işbirliği projelerinde yer alıyorum."
+    },
+    "skills": {
+      "eyebrow": "// APPLICATION_LAYER",
+      "title": "Beceriler",
+      "lead": "Diller, framework'ler, veritabanları ve mimari prensipler — birbirleriyle nasıl konuştukları dahil.",
+      "constellationHint": "Bir node üstüne gel: ilişkili teknolojiler vurgulanır. Tıkla: o beceriyi kullandığım projelere git.",
+      "hexGridHint": "Bir hex'in üzerine gel: ilişkili teknolojiler parlar. Tıkla: o beceriyi kullandığım projelere git.",
+      "cellDescriptors": {
+        "csharp": "5+ projede primary stack. ASP.NET MVC + EF Core + layered architecture standardı.",
+        "dotnet": "Web ve desktop projelerin runtime'ı. ASP.NET MVC + Worker Service deneyimi.",
+        "aspnet-mvc": "Server-rendered + REST endpoint kombinasyonu. Layered + Repository pattern.",
+        "mssql": "Schema tasarımı, T-SQL, stored procedure, sorgu optimizasyonu.",
+        "ef-core": "ORM standardım. Migration, LINQ, change tracking, performance tuning.",
+        "sql": "Tüm veritabanı projelerinin ortak dili.",
+        "tsql": "Stored procedure, function, trigger — MSSQL'de iş mantığı katmanı.",
+        "azure-sql": "MSSQL'in cloud versiyonu. Connection string + DTU yönetimi.",
+        "js": "Frontend interaktivite. Vanilla DOM, fetch, IntersectionObserver.",
+        "html": "Semantik markup, ARIA, form validation.",
+        "css": "Grid, flexbox, custom properties, container queries.",
+        "php": "Event Registration System projesinde web backend dili. Form handling, MySQL bağlantısı.",
+        "python": "Veri işleme + automation + script geliştirme. Akademik projelerde data analysis.",
+        "java": "OOP temelleri + cross-platform alıştırmalar. Akademik müfredat üzerinden.",
+        "linq": "Collection sorgulama + EF Core query composition.",
+        "vs": "Backend C# + .NET projeleri için ana IDE.",
+        "ssms": "MSSQL şema yönetimi + sorgu profilleme.",
+        "winforms": "Stock Management projesinin desktop UI katmanı.",
+        "docker": "Containerization temel + image build/run.",
+        "excel": "Formül, pivot tablo, veri analizi ve raporlama. Günlük iş akışı temeli.",
+        "jira": "Sprint tracking, ticket workflow, proje yönetim disiplini.",
+        "layered": "N-Tier ayrım: UI / Business / Data Access — varsayılan mimarim.",
+        "repo": "DAL soyutlama. EF Core + Dapper üzerinde uniform interface.",
+        "solid": "OOP disiplini. SRP + DI + interface segregation rutinim.",
+        "mvc": "ASP.NET MVC + WPF gibi UI mimarilerinin temeli."
+      },
+      "categories": {
+        "language": "Diller",
+        "framework": "Framework'ler & Teknolojiler",
+        "database": "Veritabanı Sistemleri",
+        "tool": "Geliştirme Araçları",
+        "pattern": "Mimari & Tasarım Desenleri"
+      },
+      "categoriesShort": {
+        "language": "Dil",
+        "framework": "Framework",
+        "database": "Veritabanı",
+        "tool": "Araç",
+        "pattern": "Mimari"
+      },
+      "supportingLabel": "Ekosistemde tanıdık",
+      "heroMeta": {
+        "tagline": "Daily driver",
+        "since": "Since 2023",
+        "projects": "5+ projects"
+      },
+      "certificatesTitle": "Sertifikalar",
+      "certificatesSubtitle": "15 sertifika · 2022 – 2026",
+      "softSkillsTitle": "Soft Skills",
+      "softSkillsLead": "Staj ve kulüp deneyimimden somut çıkanlar:",
+      "softSkills": [
+        {
+          "title": "Code Review",
+          "summary": "Yazılım Marketi ve İnnosa stajlarında haftalık peer review oturumları."
+        },
+        {
+          "title": "Git Workflow",
+          "summary": "Branch stratejisi, PR akışı, çakışma çözümü — BTK Akademi sertifikalı."
+        },
+        {
+          "title": "Takım İçi İletişim",
+          "summary": "Senior developer'larla mentor/mentee dinamiği, haftalık proje toplantıları."
+        },
+        {
+          "title": "Dokümantasyon",
+          "summary": "Veritabanı şemaları, API endpoint'leri ve mimari kararlar için yazılı doküman üretimi."
+        },
+        {
+          "title": "Problem Çözme",
+          "summary": "Hata izolasyonu, log analizi, transaction-based rollback senaryoları."
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "// DOMAIN_LAYER",
+      "title": "Projeler",
+      "lead": "Akademik ve staj sürecinde geliştirdiğim 4 proje. Her biri farklı bir domain — masaüstü uygulama, veritabanı tasarımı, web platformu, statik portfolyo.",
+      "filterIntro": "Becerilerden geldiyseniz: ",
+      "filterClear": "Filtreyi temizle",
+      "modalFeaturesTitle": "Özellikler",
+      "modalLearningsTitle": "Öğrendiklerim",
+      "detailsButton": "Detaylar",
+      "githubPlaceholder": "GitHub (yakında)",
+      "modalClose": "Detayları kapat"
+    },
+    "cv": {
+      "eyebrow": "// DATA_LAYER",
+      "title": "CV",
+      "downloadPdf": "PDF İndir",
+      "print": "Yazdır"
+    },
+    "contact": {
+      "eyebrow": "// API_ENDPOINT",
+      "title": "İletişim",
+      "lead": "İş, staj veya proje işbirliği için yazın. Genelde 24 saat içinde yanıtlıyorum.",
+      "directTitle": "Doğrudan iletişim",
+      "directIntro": "En hızlı yanıt için e-posta tercih ediyorum.",
+      "emailLabel": "E-posta",
+      "locationLabel": "Konum",
+      "linkedinLabel": "LinkedIn",
+      "githubLabel": "GitHub",
+      "copyEmail": "Adresi kopyala",
+      "copyEmailAria": "E-posta adresini kopyala",
+      "copySuccess": "Kopyalandı",
+      "form": {
+        "title": "Mesaj gönder",
+        "name": "Ad Soyad",
+        "namePlaceholder": "Adınız ve soyadınız",
+        "email": "E-posta",
+        "emailPlaceholder": "ornek@mail.com",
+        "subject": "Konu",
+        "subjectPlaceholder": "Kısaca konu",
+        "message": "Mesaj",
+        "messagePlaceholder": "Detayları buraya yazabilirsiniz",
+        "submit": "Gönder",
+        "submitting": "Gönderiliyor...",
+        "fallback": "Form çalışmazsa doğrudan e-posta atabilirsiniz: "
+      },
+      "errors": {
+        "name": "En az 2 karakter girin",
+        "email": "Geçerli bir e-posta adresi girin",
+        "subject": "Konu en az 3 karakter olmalı",
+        "message": "Mesaj en az 10 karakter olmalı",
+        "rateLimit": "Lütfen bir dakika sonra tekrar deneyin"
+      },
+      "toast": {
+        "success": "Mesajınız iletildi. Teşekkürler!",
+        "error": "Form gönderilemedi. Doğrudan e-posta atabilirsiniz."
+      }
+    },
+    "footer": {
+      "tagline": "Compiled in 4 layers.",
+      "stackCredit": "HTML · CSS · Vanilla JS ile inşa edildi"
+    },
+    "notFound": {
+      "eyebrow": "// EXCEPTION",
+      "title": "Layer not found",
+      "subtitle": "Aradığınız sayfa bu sitenin katmanlarından birinde yer almıyor.",
+      "homeButton": "Ana sayfaya dön"
+    },
+    "placeholderMicrocopy": {
+      "linkedin": "LinkedIn (yakında)",
+      "github": "GitHub (yakında)",
+      "tooltip": "Bu link kısa süre içinde güncellenecek. Şu an e-posta üzerinden iletişime geçebilirsiniz.",
+      "projectRepoTooltip": "Repo public'e alındığında link aktif olacak."
+    }
+  },
+  "en": {
+    "meta": {
+      "siteTitle": "İlker Efe İpek — Backend & Database Developer",
+      "aboutTitle": "About · İlker Efe İpek",
+      "skillsTitle": "Skills · İlker Efe İpek",
+      "projectsTitle": "Projects · İlker Efe İpek",
+      "cvTitle": "CV · İlker Efe İpek",
+      "contactTitle": "Contact · İlker Efe İpek",
+      "notFoundTitle": "Layer not found · İlker Efe İpek",
+      "homeDescription": "Backend & database-focused .NET developer building with layered architecture and SQL Server. Projects, skills, CV and contact.",
+      "aboutDescription": "Computer Programming student at Izmir University of Economics, .NET developer. Education, internships, interests and approach.",
+      "skillsDescription": "C#, .NET Core, SQL Server, ASP.NET MVC, Layered Architecture, Repository Pattern. 15 certifications.",
+      "projectsDescription": "Stock Management System, E-Commerce DB, Event Registration and more. Architecture, technology and outcomes.",
+      "cvDescription": "CV in Turkish and English — view online or download as PDF.",
+      "contactDescription": "Email, phone, LinkedIn, GitHub. Message form (Web3Forms).",
+      "notFoundDescription": "The page you're looking for could not be found."
+    },
+    "personal": {
+      "location": "Izmir, Turkey",
+      "currentRole": "Associate Degree Student · Computer Programming"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "cv": "CV",
+      "contact": "Contact",
+      "menuOpen": "Open menu",
+      "menuClose": "Close menu",
+      "skipToMain": "Skip to main content",
+      "logoAria": "İlker Efe İpek — Home",
+      "langSwitchAria": "Language selection",
+      "primaryNavAria": "Primary"
+    },
+    "hero": {
+      "eyebrow": "Hello, I'm",
+      "tagline": "Backend & database-focused .NET developer.",
+      "subtitle": "Computer Programming student at Izmir University of Economics.",
+      "metrics": [
+        {
+          "label": "yrs coding"
+        },
+        {
+          "label": "mo internship"
+        },
+        {
+          "label": "certificates"
+        },
+        {
+          "label": "GPA"
+        }
+      ],
+      "ctaPrimary": "See Projects",
+      "ctaSecondary": "Download CV"
+    },
+    "home": {
+      "whatIBuildEyebrow": "// CAPABILITIES",
+      "whatIBuildTitle": "What I build",
+      "whatIBuildIntro": "Capability across three layers: backend logic, frontend interaction, database fundamentals.",
+      "capabilities": [
+        {
+          "title": "Backend",
+          "summary": "RESTful services with C# / .NET Core, repository pattern, EF Core, transaction management."
+        },
+        {
+          "title": "Frontend",
+          "summary": "Semantic HTML, modular CSS, vanilla JS. Interfaces with accessibility and performance first."
+        },
+        {
+          "title": "Database",
+          "summary": "3NF design on MSSQL & Azure SQL, stored procedures, triggers, query optimization."
+        }
+      ],
+      "featuredProjectEyebrow": "// FEATURED",
+      "featuredProjectTitle": "Featured project",
+      "featuredProjectCta": "All projects",
+      "statsEyebrow": "// METRICS",
+      "statsTitle": "By the numbers",
+      "statsLabels": {
+        "codeYears": "Years actively coding",
+        "internshipMonths": "Months of internship",
+        "certificates": "Certificates (2022 – 2026)"
+      },
+      "ctaBannerTitle": "Working on something?",
+      "ctaBannerSubtitle": "Let's talk — especially for .NET, database design or internship opportunities.",
+      "ctaBannerButton": "Get in touch"
+    },
+    "about": {
+      "eyebrow": "// PRESENTATION_LAYER",
+      "title": "About",
+      "lead": "I prioritize layered architecture, repository pattern and SOLID principles in my work.",
+      "bio": "I'm a Computer Programming associate-degree student at Izmir University of Economics. I started in 2023 and completed the English preparatory program in half a semester. By the end of my first year I had completed a professional internship in software development. I'm now starting my second year.\n\nThroughout my studies I've taken industry-focused courses in .NET development, SQL Server and full-stack web technologies. My goal is to apply my growing technical foundation and project experience to innovative software solutions — especially in R&D-oriented environments.",
+      "approachTitle": "Approach",
+      "approach": "On the backend, I focus on database design, query optimization and layered architecture. On the frontend, I build interfaces with clean markup, semantic HTML and maintainable CSS. On both sides I care about code quality, team communication and documentation.",
+      "educationTitle": "Education",
+      "experienceTitle": "Experience",
+      "languagesTitle": "Languages",
+      "interestsTitle": "Interests",
+      "interests": "I play guitar and compose music in my free time. I play basketball and study music theory. I also enjoy exploring new technologies and building user-experience-focused side projects.",
+      "clubTitle": "Club",
+      "club": "Rotaract Club of Konak — active member. Involved in community service, youth leadership and international collaboration projects."
+    },
+    "skills": {
+      "eyebrow": "// APPLICATION_LAYER",
+      "title": "Skills",
+      "lead": "Languages, frameworks, databases and architectural principles — and how they speak to each other.",
+      "constellationHint": "Hover a node: related technologies highlight. Click: jump to projects that use that skill.",
+      "hexGridHint": "Hover a hex: related technologies glow. Click: jump to projects that use that skill.",
+      "cellDescriptors": {
+        "csharp": "Primary stack across 5+ projects. ASP.NET MVC + EF Core + layered architecture as default.",
+        "dotnet": "Runtime for web and desktop projects. ASP.NET MVC + Worker Service experience.",
+        "aspnet-mvc": "Server-rendered + REST endpoint combo. Layered + Repository pattern.",
+        "mssql": "Schema design, T-SQL, stored procedures, query optimization.",
+        "ef-core": "My ORM standard. Migrations, LINQ, change tracking, performance tuning.",
+        "sql": "Common language across every database project.",
+        "tsql": "Stored procedures, functions, triggers — business logic layer in MSSQL.",
+        "azure-sql": "Cloud edition of MSSQL. Connection strings + DTU management.",
+        "js": "Frontend interactivity. Vanilla DOM, fetch, IntersectionObserver.",
+        "html": "Semantic markup, ARIA, form validation.",
+        "css": "Grid, flexbox, custom properties, container queries.",
+        "php": "Web backend language in the Event Registration System project. Form handling, MySQL integration.",
+        "python": "Data processing, automation, scripting. Academic projects in data analysis.",
+        "java": "OOP fundamentals + cross-platform exercises. Through academic curriculum.",
+        "linq": "Collection queries + EF Core query composition.",
+        "vs": "Primary IDE for backend C# + .NET projects.",
+        "ssms": "MSSQL schema management + query profiling.",
+        "winforms": "Desktop UI layer of the Stock Management project.",
+        "docker": "Containerization basics + image build/run.",
+        "excel": "Formulas, pivot tables, data analysis, and reporting. Day-to-day business essential.",
+        "jira": "Sprint tracking, ticket workflow, project management discipline.",
+        "layered": "N-Tier separation: UI / Business / Data Access — my default architecture.",
+        "repo": "DAL abstraction. Uniform interface over EF Core + Dapper.",
+        "solid": "OOP discipline. SRP + DI + interface segregation as routine.",
+        "mvc": "Foundation of UI architectures like ASP.NET MVC and WPF."
+      },
+      "categories": {
+        "language": "Languages",
+        "framework": "Frameworks & Technologies",
+        "database": "Database Systems",
+        "tool": "Development Tools",
+        "pattern": "Architectural & Design Patterns"
+      },
+      "categoriesShort": {
+        "language": "Language",
+        "framework": "Framework",
+        "database": "Database",
+        "tool": "Tool",
+        "pattern": "Pattern"
+      },
+      "supportingLabel": "Familiar across the ecosystem",
+      "heroMeta": {
+        "tagline": "Daily driver",
+        "since": "Since 2023",
+        "projects": "5+ projects"
+      },
+      "certificatesTitle": "Certifications",
+      "certificatesSubtitle": "15 certificates · 2022 – 2026",
+      "softSkillsTitle": "Soft Skills",
+      "softSkillsLead": "Concretely demonstrated through internships and club activities:",
+      "softSkills": [
+        {
+          "title": "Code Review",
+          "summary": "Weekly peer-review sessions during Yazılım Marketi and İnnosa internships."
+        },
+        {
+          "title": "Git Workflow",
+          "summary": "Branch strategy, PR flow, conflict resolution — certified by BTK Akademi."
+        },
+        {
+          "title": "Team Communication",
+          "summary": "Mentor/mentee dynamic with senior developers, weekly project meetings."
+        },
+        {
+          "title": "Documentation",
+          "summary": "Written documentation for database schemas, API endpoints and architectural decisions."
+        },
+        {
+          "title": "Problem Solving",
+          "summary": "Bug isolation, log analysis, transaction-based rollback scenarios."
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "// DOMAIN_LAYER",
+      "title": "Projects",
+      "lead": "Four projects from coursework and internships. Each in a different domain — desktop application, database design, web platform, static portfolio.",
+      "filterIntro": "Coming from skills: ",
+      "filterClear": "Clear filter",
+      "modalFeaturesTitle": "Features",
+      "modalLearningsTitle": "What I learned",
+      "detailsButton": "Details",
+      "githubPlaceholder": "GitHub (coming soon)",
+      "modalClose": "Close details"
+    },
+    "cv": {
+      "eyebrow": "// DATA_LAYER",
+      "title": "CV",
+      "downloadPdf": "Download PDF",
+      "print": "Print"
+    },
+    "contact": {
+      "eyebrow": "// API_ENDPOINT",
+      "title": "Contact",
+      "lead": "Reach out for work, internships or project collaboration. I usually respond within 24 hours.",
+      "directTitle": "Direct contact",
+      "directIntro": "Email is the fastest way to get a response.",
+      "emailLabel": "Email",
+      "locationLabel": "Location",
+      "linkedinLabel": "LinkedIn",
+      "githubLabel": "GitHub",
+      "copyEmail": "Copy address",
+      "copyEmailAria": "Copy email address",
+      "copySuccess": "Copied",
+      "form": {
+        "title": "Send a message",
+        "name": "Full name",
+        "namePlaceholder": "Your full name",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "subject": "Subject",
+        "subjectPlaceholder": "Brief subject line",
+        "message": "Message",
+        "messagePlaceholder": "Write the details here",
+        "submit": "Send",
+        "submitting": "Sending...",
+        "fallback": "If the form does not work, you can email me directly: "
+      },
+      "errors": {
+        "name": "Enter at least 2 characters",
+        "email": "Enter a valid email address",
+        "subject": "Subject must be at least 3 characters",
+        "message": "Message must be at least 10 characters",
+        "rateLimit": "Please try again in a minute"
+      },
+      "toast": {
+        "success": "Your message has been sent. Thank you!",
+        "error": "Could not send the form. You can email me directly."
+      }
+    },
+    "footer": {
+      "tagline": "Compiled in 4 layers.",
+      "stackCredit": "Built with HTML · CSS · Vanilla JS"
+    },
+    "notFound": {
+      "eyebrow": "// EXCEPTION",
+      "title": "Layer not found",
+      "subtitle": "The page you're looking for is not part of this site's layers.",
+      "homeButton": "Back to home"
+    },
+    "placeholderMicrocopy": {
+      "linkedin": "LinkedIn (coming soon)",
+      "github": "GitHub (coming soon)",
+      "tooltip": "This link will be updated shortly. For now, please reach out via email.",
+      "projectRepoTooltip": "Link will activate once the repository is public."
+    }
+  }
+}

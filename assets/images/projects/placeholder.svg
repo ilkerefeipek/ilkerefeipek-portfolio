@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Project placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19161D"/>
+      <stop offset="100%" stop-color="#0F0B14"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#AB9FF2" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <g transform="translate(420 175)" opacity="0.85">
+    <rect x="0"   y="0"   width="360" height="64" rx="8" fill="#232029" stroke="#AB9FF2" stroke-width="1" opacity="0.6"/>
+    <rect x="20"  y="80"  width="320" height="64" rx="8" fill="#232029" stroke="#AB9FF2" stroke-width="1" opacity="0.5"/>
+    <rect x="40"  y="160" width="280" height="64" rx="8" fill="#232029" stroke="#AB9FF2" stroke-width="1" opacity="0.4"/>
+    <rect x="60"  y="240" width="240" height="64" rx="8" fill="#232029" stroke="#AB9FF2" stroke-width="1" opacity="0.3"/>
+  </g>
+  <text
+    x="600" y="600"
+    text-anchor="middle"
+    font-family="JetBrains Mono, ui-monospace, monospace"
+    font-size="16"
+    fill="#6B6878"
+    letter-spacing="3"
+  >// PROJECT_PREVIEW</text>
+</svg>

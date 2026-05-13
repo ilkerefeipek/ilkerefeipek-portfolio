@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="tr" data-page="home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.siteTitle">İlker Efe İpek — Backend & Veritabanı Geliştirici</title>
+  <meta name="description" data-i18n-attr="content:meta.homeDescription" content="Katmanlı mimari ve veritabanı tasarımı odaklı .NET geliştirici. Proje portföyü, beceriler, CV ve iletişim.">
+  <meta name="author" content="İlker Efe İpek">
+
+  <link rel="canonical" href="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/">
+  <link rel="alternate" hreflang="tr" href="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/">
+  <link rel="alternate" hreflang="en" href="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/">
+  <meta property="og:title" data-i18n-attr="content:meta.siteTitle" content="İlker Efe İpek — Backend & Veritabanı Geliştirici">
+  <meta property="og:description" data-i18n-attr="content:meta.homeDescription" content="Backend ve veritabanı odaklı .NET geliştirici. Projeler, beceriler, CV.">
+  <meta property="og:image" content="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="İlker Efe İpek Portfolio">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" data-i18n-attr="content:meta.siteTitle" content="İlker Efe İpek — Portfolio">
+  <meta name="twitter:description" data-i18n-attr="content:meta.homeDescription" content="Backend ve veritabanı odaklı .NET geliştirici.">
+  <meta name="twitter:image" content="https://ilkerefeipek.github.io/ilkerefeipek-portfolio/assets/images/og-cover.png">
+
+  <!-- Theme + favicon set -->
+  <meta name="theme-color" content="#0F0B14">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="alternate icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Security headers via meta (GitHub Pages serve static — limited options) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; base-uri 'self'">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="assets/fonts/inter/inter-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Stylesheets — order matters: tokens → base → components → effects → pages -->
+  <link rel="stylesheet" href="styles/bundle.css">
+
+  <!-- Sync language detection (sets <html lang> before paint to avoid CLS) -->
+  <script src="scripts/lang-init.js"></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "İlker Efe İpek",
+    "url": "https://ilkerefeipek.github.io/ilkerefeipek-portfolio/",
+    "email": "ilkerefeipek00@gmail.com",
+    "jobTitle": "Software Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Izmir University of Economics"
+    },
+    "knowsAbout": ["C#", ".NET Core", "SQL Server", "ASP.NET MVC", "Layered Architecture", "Repository Pattern"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skipToMain">Ana içeriğe atla</a>
+
+  <header class="nav-bar" role="banner">
+    <div class="container">
+      <a class="nav-logo" href="index.html" aria-label="İlker Efe İpek — Ana sayfa" data-i18n-attr="aria-label:nav.logoAria">
+        <img class="nav-logo-mark" src="assets/images/favicon.svg" alt="" width="32" height="32" aria-hidden="true">
+        <span class="nav-logo-name">İlker Efe İpek</span>
+      </a>
+      <nav aria-label="Primary" class="nav-primary" data-i18n-attr="aria-label:nav.primaryNavAria">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page" data-i18n="nav.home">Ana Sayfa</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Hakkımda</a></li>
+          <li><a href="skills.html" data-i18n="nav.skills">Beceriler</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projeler</a></li>
+          <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language selection" data-i18n-attr="aria-label:nav.langSwitchAria">
+          <button type="button" data-lang-toggle data-lang="tr" aria-pressed="true">TR</button>
+          <button type="button" data-lang-toggle data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="nav-toggle" data-nav-open aria-label="Menüyü aç" data-i18n-attr="aria-label:nav.menuOpen" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" data-nav-drawer aria-hidden="true">
+    <div class="cluster" style="justify-content: flex-end;">
+      <button type="button" class="btn-icon" data-nav-close aria-label="Menüyü kapat" data-i18n-attr="aria-label:nav.menuClose">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+      <li><a href="about.html" data-i18n="nav.about">Hakkımda</a></li>
+      <li><a href="skills.html" data-i18n="nav.skills">Beceriler</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects">Projeler</a></li>
+      <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+    </ul>
+  </div>
+
+  <div class="cursor-blob" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" data-hero-sequence data-state="loading">
+      <canvas class="code-rain" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Merhaba, ben</p>
+          <h1 class="hero-name" data-name-decode="İlker Efe İpek">İlker Efe İpek</h1>
+          <p class="hero-tagline" data-i18n="hero.tagline">Backend ve veritabanı odaklı .NET geliştirici.</p>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">İzmir Ekonomi Üniversitesi Bilgisayar Programcılığı öğrencisi.</p>
+
+          <div class="hero-metrics" data-counters>
+            <div class="hero-metric">
+              <span class="hero-metric-value" data-counter-target="2.5+">0</span>
+              <span class="hero-metric-label" data-i18n="hero.metrics.0.label">yıl kod</span>
+            </div>
+            <div class="hero-metric">
+              <span class="hero-metric-value" data-counter-target="11">0</span>
+              <span class="hero-metric-label" data-i18n="hero.metrics.1.label">ay staj</span>
+            </div>
+            <div class="hero-metric">
+              <span class="hero-metric-value" data-counter-target="15">0</span>
+              <span class="hero-metric-label" data-i18n="hero.metrics.2.label">sertifika</span>
+            </div>
+            <div class="hero-metric">
+              <span class="hero-metric-value" data-counter-target="3.32">0</span>
+              <span class="hero-metric-label" data-i18n="hero.metrics.3.label">GPA</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="projects.html" data-i18n="hero.ctaPrimary">Projeleri Gör</a>
+            <a class="btn btn-secondary" href="cv.html" data-i18n="hero.ctaSecondary">CV İndir</a>
+          </div>
+        </div>
+
+        <div class="arch-diagram-wrapper">
+          <svg class="arch-diagram" viewBox="0 0 480 520" role="group" aria-labelledby="arch-title" data-arch-diagram>
+            <title id="arch-title">Layered architecture diagram — 4 layers from presentation down to data</title>
+            <g class="layer" data-layer="presentation" data-target="about.html">
+              <rect class="layer-tile" x="20" y="40" width="360" height="72" rx="8"/>
+              <text class="layer-label" x="40" y="74">// PRESENTATION_LAYER</text>
+              <text class="layer-subtitle" x="40" y="96">UI / HTML / CSS</text>
+            </g>
+            <g class="layer" data-layer="application" data-target="skills.html">
+              <rect class="layer-tile" x="40" y="148" width="360" height="72" rx="8"/>
+              <text class="layer-label" x="60" y="182">// APPLICATION_LAYER</text>
+              <text class="layer-subtitle" x="60" y="204">JS Modules / State / Routing</text>
+            </g>
+            <g class="layer" data-layer="domain" data-target="projects.html">
+              <rect class="layer-tile" x="60" y="256" width="360" height="72" rx="8"/>
+              <text class="layer-label" x="80" y="290">// DOMAIN_LAYER</text>
+              <text class="layer-subtitle" x="80" y="312">Business Logic / Models</text>
+            </g>
+            <g class="layer" data-layer="data" data-target="cv.html">
+              <rect class="layer-tile" x="80" y="364" width="360" height="72" rx="8"/>
+              <text class="layer-label" x="100" y="398">// DATA_LAYER</text>
+              <text class="layer-subtitle" x="100" y="420">JSON / LocalStorage / Static Files</text>
+            </g>
+            <line class="connector" x1="200" y1="112" x2="220" y2="148"/>
+            <line class="connector" x1="220" y1="220" x2="240" y2="256"/>
+            <line class="connector" x1="240" y1="328" x2="260" y2="364"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I BUILD -->
+    <section class="section">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="home.whatIBuildEyebrow">// CAPABILITIES</p>
+        <h2 data-i18n="home.whatIBuildTitle">Ne inşa ediyorum</h2>
+        <p class="lead" data-i18n="home.whatIBuildIntro">Üç katmanda yetkinlik: backend mantığı, frontend etkileşimi, veritabanı temelleri.</p>
+
+        <div class="capabilities-grid stack" style="margin-top: var(--sp-12);" data-reveal-stagger>
+          <article class="card">
+            <h3 data-i18n="home.capabilities.0.title">Backend</h3>
+            <p data-i18n="home.capabilities.0.summary">C# / .NET Core ile RESTful servisler, repository pattern, EF Core, transaction yönetimi.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="home.capabilities.1.title">Frontend</h3>
+            <p data-i18n="home.capabilities.1.summary">Semantic HTML, modüler CSS, vanilla JS. Erişilebilirlik ve performans öncelikli arayüzler.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="home.capabilities.2.title">Database</h3>
+            <p data-i18n="home.capabilities.2.summary">MSSQL & Azure SQL üzerinde 3NF tasarım, saklı yordamlar, tetikleyiciler, sorgu optimizasyonu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section featured-project">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="home.featuredProjectEyebrow">// FEATURED</p>
+        <h2 data-i18n="home.featuredProjectTitle">Öne çıkan proje</h2>
+
+        <div class="featured-project-grid stack" style="margin-top: var(--sp-12);" data-reveal>
+          <div class="featured-project-image">
+            <img src="assets/images/projects/placeholder.svg" alt="" loading="lazy" width="1200" height="675">
+          </div>
+          <div class="featured-project-info" data-featured-project>
+            <p class="card-meta featured-project-meta">2024 · Layered (N-Tier) · ADO.NET</p>
+            <h3 class="featured-project-title">Stok Yönetim Sistemi</h3>
+            <p class="featured-project-summary" data-featured-summary>Katmanlı mimari ile geliştirilen masaüstü envanter yönetim uygulaması. Kullanıcı, tedarikçi, ürün ve sipariş yönetimi modülleri içerir.</p>
+            <div class="cluster featured-project-stack">
+              <span class="pill skill-pill">C#</span>
+              <span class="pill skill-pill">Windows Forms</span>
+              <span class="pill skill-pill">SQL Server</span>
+              <span class="pill skill-pill">ADO.NET</span>
+            </div>
+            <div class="featured-project-cta">
+              <a class="btn btn-secondary btn-small" href="projects.html#stock-management" data-i18n="home.featuredProjectCta">Tüm projeler</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS / METRICS -->
+    <section class="section">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="home.statsEyebrow">// METRICS</p>
+        <h2 data-i18n="home.statsTitle">Sayılarla</h2>
+
+        <div class="capabilities-grid stack" style="margin-top: var(--sp-12);" data-reveal-stagger>
+          <article class="card">
+            <p class="counter" data-counter-target="2.5+">0</p>
+            <p style="margin-top: var(--sp-2); color: var(--text-secondary);" data-i18n="home.statsLabels.codeYears">Yıllık aktif kod yazma</p>
+          </article>
+          <article class="card">
+            <p class="counter" data-counter-target="11">0</p>
+            <p style="margin-top: var(--sp-2); color: var(--text-secondary);" data-i18n="home.statsLabels.internshipMonths">Ay profesyonel staj</p>
+          </article>
+          <article class="card">
+            <p class="counter" data-counter-target="15">0</p>
+            <p style="margin-top: var(--sp-2); color: var(--text-secondary);" data-i18n="home.statsLabels.certificates">Sertifika (2022 – 2026)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner" data-reveal>
+          <h2 data-i18n="home.ctaBannerTitle">Bir şey üzerinde çalışıyor musunuz?</h2>
+          <p class="lead" style="margin: var(--sp-4) auto 0;" data-i18n="home.ctaBannerSubtitle">Konuşalım — özellikle .NET, veritabanı tasarımı veya stajlık fırsatları için.</p>
+          <a class="btn btn-primary" href="contact.html" style="margin-top: var(--sp-8);" data-i18n="home.ctaBannerButton">İletişime geç</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="footer-name">İlker Efe İpek</span>
+        <span class="footer-tagline" data-i18n="footer.tagline">Compiled in 4 layers.</span>
+      </div>
+      <div class="footer-credits">
+        <a href="mailto:ilkerefeipek00@gmail.com">ilkerefeipek00@gmail.com</a>
+        <div class="footer-links">
+          <span class="placeholder-pill pill" data-placeholder="linkedin" data-i18n="placeholderMicrocopy.linkedin" data-i18n-attr="title:placeholderMicrocopy.tooltip" title="Bu link kısa süre içinde güncellenecek.">LinkedIn (yakında)</span>
+          <span class="placeholder-pill pill" data-placeholder="github" data-i18n="placeholderMicrocopy.github" data-i18n-attr="title:placeholderMicrocopy.tooltip" title="Bu link kısa süre içinde güncellenecek.">GitHub (yakında)</span>
+        </div>
+        <p class="footer-rights">
+          © 2026 İlker Efe İpek · <span data-i18n="footer.stackCredit">HTML · CSS · Vanilla JS ile inşa edildi</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

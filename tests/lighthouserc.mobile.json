@@ -1,0 +1,42 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://127.0.0.1:8765/",
+        "http://127.0.0.1:8765/about.html",
+        "http://127.0.0.1:8765/skills.html",
+        "http://127.0.0.1:8765/projects.html",
+        "http://127.0.0.1:8765/cv.html",
+        "http://127.0.0.1:8765/contact.html"
+      ],
+      "startServerCommand": "python -m http.server 8765 --bind 127.0.0.1 --directory ..",
+      "startServerReadyPattern": "Serving HTTP",
+      "numberOfRuns": 1,
+      "settings": {
+        "throttlingMethod": "simulate",
+        "formFactor": "mobile",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 375,
+          "height": 667,
+          "deviceScaleFactor": 2,
+          "disabled": false
+        },
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "cpuSlowdownMultiplier": 4
+        },
+        "skipAudits": ["uses-http2", "redirects-http"]
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.85 }],
+        "categories:accessibility": ["error", { "minScore": 0.95 }],
+        "categories:best-practices": ["error", { "minScore": 0.90 }],
+        "categories:seo": ["error", { "minScore": 0.90 }]
+      }
+    }
+  }
+}

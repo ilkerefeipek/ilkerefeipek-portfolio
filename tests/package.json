@@ -1,0 +1,21 @@
+{
+  "name": "ilkerefeipek-portfolio-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E2E + a11y + visual regression tests for the portfolio site.",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:visual": "playwright test visual-regression",
+    "test:visual:update": "playwright test visual-regression --update-snapshots",
+    "test:a11y": "playwright test accessibility",
+    "lighthouse": "lhci autorun --config=./lighthouserc.json",
+    "serve": "python -m http.server 8765 --bind 127.0.0.1 --directory .."
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.50.0",
+    "@lhci/cli": "^0.14.0"
+  }
+}

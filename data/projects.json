@@ -1,0 +1,184 @@
+[
+  {
+    "id": "stock-management",
+    "displayOrder": 1,
+    "featured": true,
+    "year": "2024",
+    "titleTr": "Stok Yönetim Sistemi",
+    "titleEn": "Stock Management System",
+    "stack": ["C#", "Windows Forms", "SQL Server", "ADO.NET"],
+    "skillIds": ["csharp", "winforms", "mssql", "tsql", "layered", "repo"],
+    "architecture": "Layered (N-Tier) · ADO.NET",
+    "summaryTr": "Katmanlı mimari ile geliştirilen masaüstü envanter yönetim uygulaması. Kullanıcı, tedarikçi, ürün ve sipariş yönetimi modülleri içerir.",
+    "summaryEn": "Desktop-based inventory management application built with a layered architecture. Modules for users, suppliers, products and orders.",
+    "descriptionTr": "C# Windows Forms ve SQL Server ile geliştirilmiş, masaüstü tabanlı bir envanter takip uygulaması. Sistem; kullanıcılar, tedarikçiler, ürünler ve siparişlerin yönetimi için ayrı modüllere sahiptir. Veri işlemleri ADO.NET üzerinden yürütülür; doğrulama, istisna yönetimi ve CRUD işlevselliği formlara entegre edilmiştir.",
+    "descriptionEn": "A desktop-based inventory tracking application developed with C# Windows Forms and SQL Server. The system includes separate modules for managing users, suppliers, products and orders. Data operations are handled via ADO.NET, with validation, exception handling and CRUD functionality integrated into the forms.",
+    "featuresTr": [
+      "DataGridView üzerinden gerçek zamanlı güncelleme ve silme işlemleri",
+      "Kayıt ekleme ve düzenleme için ayrı formlar",
+      "Veritabanı tutarlılığı için saklı yordamlar (stored procedures) ve tetikleyiciler (triggers)",
+      "Sipariş üzerinde toplam fiyat ve ürün miktarı hesaplamaları",
+      "Geri alma destekli işlem (transaction) tabanlı ekleme akışı"
+    ],
+    "featuresEn": [
+      "Real-time update and delete operations via DataGridView",
+      "Separate forms for adding and editing records",
+      "Stored procedures and triggers for database consistency",
+      "Calculations for total price and product quantities in orders",
+      "Transaction-based inserts with rollback support"
+    ],
+    "learningsTr": [
+      "ADO.NET üzerinde manuel transaction yönetimi pratiği",
+      "Katmanlı mimaride DAL/BLL/UI ayrımının disipline edilmesi",
+      "WinForms tarafında iş kuralı ve UI senkronizasyonu"
+    ],
+    "learningsEn": [
+      "Hands-on transaction management on ADO.NET",
+      "Disciplined DAL/BLL/UI separation in layered architecture",
+      "Business-rule and UI synchronization in WinForms"
+    ],
+    "githubUrl": "PLACEHOLDER",
+    "demoUrl": null,
+    "imagePath": "assets/images/projects/placeholder.svg",
+    "imageAltTr": "Stok Yönetim Sistemi ekran tasarımı",
+    "imageAltEn": "Stock Management System screen design"
+  },
+  {
+    "id": "ecommerce-db",
+    "displayOrder": 2,
+    "featured": false,
+    "year": "2024",
+    "titleTr": "Çok Katmanlı E-Ticaret Veritabanı Tasarımı",
+    "titleEn": "Multi-Layered Address-Linked E-Commerce DB Design",
+    "stack": ["MSSQL", "T-SQL"],
+    "skillIds": ["sql", "mssql", "tsql", "layered"],
+    "architecture": "3NF · Stored Procedures · Triggers",
+    "summaryTr": "Kullanıcı, ürün, tedarikçi, sipariş, adres ve mesaj yönetimi içeren e-ticaret modeli için normalize edilmiş ilişkisel veritabanı tasarımı.",
+    "summaryEn": "Normalized relational database design for an e-commerce model with user, product, supplier, order, address and message management.",
+    "descriptionTr": "Bir e-ticaret platformu için tasarlanmış, üçüncü normal forma uygun (3NF) ilişkisel veritabanı. Kısıtlar (constraints), saklı yordamlar, skaler ve tablo değerli fonksiyonlar, ileri seviye tetikleyiciler ve işlem (transaction) tabanlı operasyonlar içerir.",
+    "descriptionEn": "A relational database designed for an e-commerce platform, compliant with third normal form (3NF). Includes constraints, stored procedures, scalar and table-valued functions, advanced triggers and transactional operations.",
+    "featuresTr": [
+      "CHECK, UNIQUE ve DEFAULT kısıtları ile 3NF uyumlu şema",
+      "Doğrulama içeren ekleme/güncelleme/silme yordamları",
+      "Kullanıcı kaydında otomatik adres oluşturma tetikleyicisi",
+      "Yedekleme tetikleyicileri ve silme loglaması",
+      "Sipariş işlemleri için işlem geri alma (rollback) mantığı"
+    ],
+    "featuresEn": [
+      "3NF-compliant schema with CHECK, UNIQUE and DEFAULT constraints",
+      "Insert/update/delete procedures with validation",
+      "Trigger for automatic address creation upon user registration",
+      "Backup triggers and deletion logging",
+      "Transaction rollback logic for order processing"
+    ],
+    "learningsTr": [
+      "Üst seviye tetikleyici ve fonksiyon kullanımının pratik avantajları",
+      "Veri bütünlüğü için kısıt seçim disiplini",
+      "Karmaşık iş akışlarında transaction rollback senaryoları"
+    ],
+    "learningsEn": [
+      "Practical advantages of advanced trigger and function usage",
+      "Constraint-selection discipline for data integrity",
+      "Transaction rollback scenarios in complex workflows"
+    ],
+    "githubUrl": "PLACEHOLDER",
+    "demoUrl": null,
+    "imagePath": "assets/images/projects/placeholder.svg",
+    "imageAltTr": "E-Ticaret Veritabanı şema diyagramı",
+    "imageAltEn": "E-Commerce database schema diagram"
+  },
+  {
+    "id": "event-registration",
+    "displayOrder": 3,
+    "featured": false,
+    "year": "2023",
+    "titleTr": "Etkinlik Kayıt ve Yönetim Sistemi",
+    "titleEn": "Event Registration & Management System",
+    "stack": ["PHP", "MySQL", "HTML", "CSS"],
+    "skillIds": ["sql", "html", "css", "mvc"],
+    "architecture": "Session-based · MVC pattern",
+    "summaryTr": "Kullanıcı kaydı ve yönetici etkinlik kontrolü destekleyen üniversite etkinlik platformu.",
+    "summaryEn": "University event platform supporting user registration and administrator event control.",
+    "descriptionTr": "PHP ve MySQL ile geliştirilen, web tabanlı bir üniversite etkinlik platformu. Kullanıcılar yaklaşan etkinlikleri görüntüleyip kayıt olabilir; yöneticiler korumalı bir panel üzerinden etkinlik ekleyebilir, düzenleyebilir veya silebilir.",
+    "descriptionEn": "A web-based university event platform built with PHP and MySQL. Users browse and register for upcoming events while administrators can add, edit or delete events through a protected panel.",
+    "featuresTr": [
+      "Oturum tabanlı (session-based) kullanıcı kimlik doğrulama",
+      "Form doğrulamalı MySQL entegrasyonu",
+      "Dinamik etkinlik listeleme ve filtreleme",
+      "Güvenli POST/GET işleme",
+      "Etkinlik verilerini yönetmek için yönetici paneli"
+    ],
+    "featuresEn": [
+      "Session-based user authentication",
+      "MySQL integration with form validation",
+      "Dynamic event listing and filtering",
+      "Secure POST/GET handling",
+      "Admin panel for managing event data"
+    ],
+    "learningsTr": [
+      "Session yönetiminde XSS ve CSRF temellerini uygulama",
+      "MVC paradigmasında controller-view ayrımı",
+      "Form doğrulama akışlarının server-side disiplinlenmesi"
+    ],
+    "learningsEn": [
+      "Applying XSS and CSRF basics in session management",
+      "Controller-view separation in the MVC paradigm",
+      "Server-side discipline for form validation flows"
+    ],
+    "githubUrl": "PLACEHOLDER",
+    "demoUrl": null,
+    "imagePath": "assets/images/projects/placeholder.svg",
+    "imageAltTr": "Etkinlik Kayıt Sistemi yönetici paneli",
+    "imageAltEn": "Event Registration System admin panel"
+  },
+  {
+    "id": "portfolio",
+    "displayOrder": 4,
+    "featured": false,
+    "year": "2026",
+    "titleTr": "Portfolyo Web Sitesi (bu site)",
+    "titleEn": "Portfolio Web Site (this site)",
+    "stack": ["HTML5", "CSS3", "Vanilla JavaScript"],
+    "skillIds": ["html", "css", "js"],
+    "architecture": "Static · Vanilla JS · GitHub Pages",
+    "summaryTr": "Layered Mind v3 — Architectural Showcase tasarımıyla, framework'süz ve build adımsız üretilen kişisel portfolyo.",
+    "summaryEn": "Personal portfolio built without frameworks or build steps, using the Layered Mind v3 — Architectural Showcase design.",
+    "descriptionTr": "Şu anda görüntülediğiniz site. Saf HTML, CSS ve JavaScript ile inşa edildi; React, Tailwind, Webpack veya benzeri hiçbir bağımlılık yok. TR/EN i18n, 8 visual efekt, Playwright E2E test paketi ve GitHub Pages dağıtımı içerir.",
+    "descriptionEn": "The site you are currently viewing. Built with pure HTML, CSS and JavaScript — no React, Tailwind, Webpack or similar dependencies. Includes TR/EN i18n, 8 visual effects, a Playwright E2E test suite and GitHub Pages deployment.",
+    "featuresTr": [
+      "TR/EN içerik anahtarlama (data-i18n + content.json)",
+      "Hero opening sequence: code-rain, name decode, animated layered architecture diagram",
+      "Skills constellation: force-directed canvas, ilişkili node hover/click",
+      "Project cards: magnetic tilt + glow trail + modal detay",
+      "View Transitions API ile sayfa geçişleri",
+      "Playwright + axe-core + Lighthouse CI test pipeline'ı",
+      "Lighthouse Performance / Accessibility / Best Practices / SEO ≥ 95",
+      "Self-host fontlar (Inter + JetBrains Mono), Latin + Latin-Ext subset"
+    ],
+    "featuresEn": [
+      "TR/EN content switching (data-i18n + content.json)",
+      "Hero opening sequence: code-rain, name decode, animated layered architecture diagram",
+      "Skills constellation: force-directed canvas with related-node hover/click",
+      "Project cards: magnetic tilt + glow trail + detail modal",
+      "Page transitions via the View Transitions API",
+      "Playwright + axe-core + Lighthouse CI test pipeline",
+      "Lighthouse Performance / Accessibility / Best Practices / SEO ≥ 95",
+      "Self-hosted fonts (Inter + JetBrains Mono), Latin + Latin-Ext subset"
+    ],
+    "learningsTr": [
+      "Sıfır framework ile production-grade UX kurmak — disiplinli token sistemi ve Vanilla JS modülleri ile mümkün",
+      "View Transitions API'nin multi-page static site'larda doğru kullanımı",
+      "Playwright visual regression + axe-core a11y entegrasyonu pratiği"
+    ],
+    "learningsEn": [
+      "Building production-grade UX without frameworks — possible through disciplined design tokens and vanilla JS modules",
+      "Correct use of the View Transitions API in multi-page static sites",
+      "Hands-on Playwright visual regression + axe-core a11y integration"
+    ],
+    "githubUrl": "PLACEHOLDER",
+    "demoUrl": "https://ilkerefeipek.github.io/ilkerefeipek-portfolio/",
+    "imagePath": "assets/images/projects/placeholder.svg",
+    "imageAltTr": "Portfolyo sitesi hero görseli",
+    "imageAltEn": "Portfolio site hero visual"
+  }
+]

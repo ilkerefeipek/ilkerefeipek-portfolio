@@ -1,0 +1,339 @@
+/* ============================================================
+   effects.css — animations, keyframes, hero sequence,
+                 scroll reveal, magnetic tilt, code rain canvas,
+                 cursor blob, view transitions
+   All animations honor prefers-reduced-motion.
+   ============================================================ */
+
+/* --- Hero entrance keyframes ----------------------------- */
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes glow-flash {
+  0%   { text-shadow: 0 0 0 transparent; }
+  30%  { text-shadow: 0 0 24px var(--brand-primary), 0 0 48px rgba(171, 159, 242, 0.4); }
+  100% { text-shadow: 0 0 0 transparent; }
+}
+
+@keyframes layer-rise {
+  from { opacity: 0; transform: translateY(-12px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes drift {
+  0%   { transform: translateY(-20%); opacity: 0; }
+  10%  { opacity: 0.07; }
+  90%  { opacity: 0.07; }
+  100% { transform: translateY(120vh); opacity: 0; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0); }
+  to   { transform: rotate(360deg); }
+}
+
+/* --- Hero sequence orchestration -------------------------
+   Hero text is visible immediately (no opacity:0 entrance) so LCP can paint
+   without waiting for JS hydration. Atmospheric layers (code-rain canvas,
+   arch-diagram entrance, name decode) carry the "sequence" feel without
+   blocking the largest contentful paint.
+-------------------------------------------------------- */
+
+[data-hero-sequence] .hero-name.glowed {
+  animation: glow-flash var(--dur-reveal) var(--ease-out-expo) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-hero-sequence] .hero-name.glowed { animation: none !important; }
+}
+
+/* --- Code rain canvas ------------------------------------ */
+
+canvas.code-rain {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(1px);
+}
+
+@media (max-width: 767px) {
+  canvas.code-rain { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  canvas.code-rain { display: none; }
+}
+
+/* --- Cursor blob (and custom cursor) --------------------- */
+
+.cursor-blob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    var(--brand-a18),
+    var(--brand-a06) 60%,
+    transparent 80%
+  );
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  transition: opacity var(--dur-emphasis);
+  opacity: 0;
+}
+
+.cursor-blob[data-active='true'] {
+  opacity: 1;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--brand-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: calc(var(--z-cursor) + 1);
+  transform: translate(-50%, -50%);
+  transition: width var(--dur-std) var(--ease-out-expo),
+              height var(--dur-std) var(--ease-out-expo),
+              border-color var(--dur-std);
+  mix-blend-mode: difference;
+  opacity: 0;
+}
+
+.custom-cursor::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 4px;
+  height: 4px;
+  background: var(--brand-primary);
+  border-radius: 50%;
+}
+
+.custom-cursor[data-active='true'] { opacity: 0.8; }
+.custom-cursor[data-hover='true'] {
+  width: 48px;
+  height: 48px;
+}
+.custom-cursor[data-hover='true']::after {
+  display: none;
+}
+
+@media (max-width: 1023px), (pointer: coarse) {
+  .cursor-blob, .custom-cursor { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blob, .custom-cursor { display: none; }
+}
+
+/* --- Magnetic tilt --------------------------------------- */
+
+.tilt {
+  transition: transform var(--dur-emphasis) var(--ease-out-expo);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.tilt:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.tilt-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(
+    300px at var(--mx, 50%) var(--my, 50%),
+    var(--brand-a18),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity var(--dur-std);
+  z-index: 1;
+}
+
+.tilt:hover .tilt-glow { opacity: 1; }
+
+@media (max-width: 1023px), (pointer: coarse) {
+  .tilt:hover {
+    transform: scale(1.01);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilt:hover {
+    transform: none;
+  }
+  .tilt-glow { display: none; }
+}
+
+/* --- Scroll reveal --------------------------------------- */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity var(--dur-reveal) var(--ease-out-expo),
+              transform var(--dur-reveal) var(--ease-out-expo);
+}
+
+[data-reveal][data-revealed='true'] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--dur-emphasis) var(--ease-out-expo),
+              transform var(--dur-emphasis) var(--ease-out-expo);
+}
+
+[data-reveal-stagger][data-revealed='true'] > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal-stagger][data-revealed='true'] > *:nth-child(1) { transition-delay: 0ms; }
+[data-reveal-stagger][data-revealed='true'] > *:nth-child(2) { transition-delay: 100ms; }
+[data-reveal-stagger][data-revealed='true'] > *:nth-child(3) { transition-delay: 200ms; }
+[data-reveal-stagger][data-revealed='true'] > *:nth-child(4) { transition-delay: 300ms; }
+[data-reveal-stagger][data-revealed='true'] > *:nth-child(5) { transition-delay: 400ms; }
+[data-reveal-stagger][data-revealed='true'] > *:nth-child(6) { transition-delay: 500ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  [data-reveal-stagger] > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* --- Arch diagram (SVG) ---------------------------------- */
+
+.arch-diagram .layer {
+  cursor: pointer;
+  transition: opacity var(--dur-std) var(--ease-out-expo),
+              transform var(--dur-std) var(--ease-out-expo),
+              filter var(--dur-std) var(--ease-out-expo);
+  transform-origin: center;
+}
+
+.arch-diagram .layer:hover {
+  filter: drop-shadow(0 0 20px rgba(171, 159, 242, 0.6));
+}
+
+.arch-diagram[data-hovered='true'] .layer:not(:hover) {
+  opacity: 0.4;
+}
+
+.arch-diagram .layer rect.layer-tile {
+  fill: var(--bg-tertiary);
+  stroke: var(--border-strong);
+  stroke-width: 1;
+  transition: fill var(--dur-std), stroke var(--dur-std), stroke-width var(--dur-std);
+}
+
+.arch-diagram .layer:hover rect.layer-tile {
+  fill: var(--brand-a10);
+  stroke: var(--brand-primary);
+  stroke-width: 2;
+}
+
+.arch-diagram .layer text.layer-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  fill: var(--brand-primary);
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.arch-diagram .layer text.layer-subtitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  fill: var(--text-secondary);
+  pointer-events: none;
+}
+
+.arch-diagram .connector {
+  stroke: rgba(171, 159, 242, 0.15);
+  stroke-width: 1;
+  fill: none;
+}
+
+@keyframes layer-entrance {
+  from { opacity: 0; transform: translateY(-12px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+[data-hero-sequence][data-state='ready'] .arch-diagram .layer {
+  animation: layer-entrance var(--dur-emphasis) var(--ease-out-expo) forwards;
+  opacity: 0;
+}
+
+[data-hero-sequence][data-state='ready'] .arch-diagram .layer[data-layer='presentation'] { animation-delay: 1200ms; }
+[data-hero-sequence][data-state='ready'] .arch-diagram .layer[data-layer='application']  { animation-delay: 1400ms; }
+[data-hero-sequence][data-state='ready'] .arch-diagram .layer[data-layer='domain']       { animation-delay: 1600ms; }
+[data-hero-sequence][data-state='ready'] .arch-diagram .layer[data-layer='data']         { animation-delay: 1800ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .arch-diagram .layer {
+    opacity: 1 !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* --- View transitions ----------------------------------- */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 200ms;
+  animation-timing-function: var(--ease-out-expo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}
+
+/* --- Counter animation ----------------------------------- */
+
+.counter {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--fs-3xl);
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  font-variant-numeric: tabular-nums;
+  display: inline-block;
+}

@@ -1,0 +1,143 @@
+/* ============================================================
+   tokens.css — Layered Mind v3 design system
+   See docs/design_system.md for rationale + WCAG contrast notes.
+   "No generic AI aesthetics, production-grade, bold typography,
+   creative layout, professional color, consistent spacing,
+   hover effects."
+   ============================================================ */
+
+:root {
+  /* --- Background ---------------------------------------- */
+  --bg-primary:    #0F0B14;   /* app body */
+  --bg-secondary:  #19161D;   /* nav glass base, input field */
+  --bg-tertiary:   #232029;   /* card surface */
+  --bg-elevated:   #2C2934;   /* tooltip, dropdown, toast */
+
+  /* --- Brand --------------------------------------------- */
+  --brand-primary: #AB9FF2;   /* primary lavender accent — single brand color */
+  --brand-hover:   #8E80E0;
+  --brand-muted:   #6E63B5;
+
+  /* --- Accent (sparingly: 1–2 places) -------------------- */
+  --accent-pink:   #FF6B9D;
+  --accent-blue:   #4A9DFF;
+
+  /* --- Text ---------------------------------------------- */
+  --text-primary:   #FFFFFF;  /* headings, hero — 18.7:1 on bg-primary */
+  --text-secondary: #B8B4C6;  /* body — 9.4:1 on bg-primary */
+  --text-muted:     #ABA8BA;  /* meta, footer — 6.1:1 on bg-primary, 5.6:1 on bg-secondary, 4.7:1 on bg-tertiary (all WCAG AA) */
+
+  /* --- Border -------------------------------------------- */
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  /* --- Brand alpha variants (derived from --brand-primary #AB9FF2) --- */
+  --brand-a06: rgba(171, 159, 242, 0.06);
+  --brand-a08: rgba(171, 159, 242, 0.08);
+  --brand-a10: rgba(171, 159, 242, 0.10);
+  --brand-a18: rgba(171, 159, 242, 0.18);
+  --brand-a20: rgba(171, 159, 242, 0.20);
+  --brand-a35: rgba(171, 159, 242, 0.35);
+  --brand-a50: rgba(171, 159, 242, 0.50);
+
+  /* --- Type scale ---------------------------------------- */
+  --fs-micro: 0.625rem;
+  --fs-2xs:   0.6875rem;
+  --fs-xs:    0.75rem;
+  --fs-sm:    0.875rem;
+  --fs-base:  1rem;
+  --fs-md:    1.0625rem;
+  --fs-lg:    1.125rem;
+  --fs-xl:    1.5rem;
+  --fs-2xl:   2rem;
+  --fs-3xl:   2.5rem;
+  --fs-4xl:   4rem;
+  --fs-hero:  clamp(2.5rem, 8vw, 6rem);
+
+  /* --- Letter spacing ------------------------------------ */
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0;
+  --tracking-mono:   0.16em;
+
+  /* --- Line height --------------------------------------- */
+  --leading-tight:  1.05;
+  --leading-snug:   1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.6;
+
+  /* --- Font families ------------------------------------- */
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* --- Spacing (8pt grid) -------------------------------- */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+
+  /* --- Radius -------------------------------------------- */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 999px;
+
+  /* --- Layout -------------------------------------------- */
+  --container-max: 1280px;
+  --container-px:  clamp(1rem, 4vw, 3rem);
+  --nav-height:    80px;
+  --touch-target:  44px;  /* WCAG 2.5.5 AA minimum */
+
+  /* --- Motion -------------------------------------------- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --dur-micro:    150ms;
+  --dur-std:      300ms;
+  --dur-emphasis: 500ms;
+  --dur-reveal:   600ms;
+  --dur-long:     800ms;
+
+  /* --- Shadows / glow ------------------------------------ */
+  --shadow-card-hover: 0 0 0 1px var(--brand-primary), 0 16px 40px rgba(171, 159, 242, 0.10);
+  --shadow-cta-hover:  0 12px 32px rgba(171, 159, 242, 0.35);
+  --glow-brand:        0 0 24px var(--brand-primary);
+
+  /* --- Z-index --------------------------------------- */
+  --z-skip:    9999;
+  --z-modal:   500;
+  --z-toast:   400;
+  --z-nav:     100;
+  --z-cursor:  90;
+  --z-content: 1;
+
+  /* --- Breakpoints (reference only — media queries below) -
+     --bp-md: 768px (tablet)
+     --bp-lg: 1024px (desktop)
+     --bp-xl: 1280px (large desktop)
+  -------------------------------------------------------- */
+}
+
+/* Print overrides — siyah text, beyaz bg, no glassmorphism, no animations */
+@media print {
+  :root {
+    --bg-primary:     #FFFFFF;
+    --bg-secondary:   #FFFFFF;
+    --bg-tertiary:    #FFFFFF;
+    --bg-elevated:    #FFFFFF;
+    --text-primary:   #000000;
+    --text-secondary: #1F1F1F;
+    --text-muted:     #555555;
+    --brand-primary:  #2B1F66;
+    --border-subtle:  #DDD;
+    --border-strong:  #999;
+  }
+}

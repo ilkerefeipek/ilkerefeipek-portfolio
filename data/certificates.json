@@ -1,0 +1,137 @@
+[
+  {
+    "id": "winforms-crud-2022",
+    "titleTr": "Windows Forms ile Arayüz Geliştirme ve Gömülü CRUD Sistemleri",
+    "titleEn": "Windows Forms UI Development and Embedded CRUD Systems",
+    "issuer": "Udemy",
+    "year": "2022",
+    "category": "framework",
+    "skillIds": ["winforms", "csharp"]
+  },
+  {
+    "id": "layered-ntier-2022",
+    "titleTr": "Mühendislik Uygulamalarında Katmanlı Mimari ve N-Tier Tasarımı",
+    "titleEn": "Layered Architecture and N-Tier Design in Engineering Applications",
+    "issuer": "Academind",
+    "year": "2022",
+    "category": "pattern",
+    "skillIds": ["layered", "repo"]
+  },
+  {
+    "id": "linq-exception-logging-2022",
+    "titleTr": "C# içinde LINQ, İstisna Yönetimi ve Sistem Loglaması",
+    "titleEn": "LINQ, Exception Handling, and System Logging in C#",
+    "issuer": "Educative.io",
+    "year": "2022",
+    "category": "framework",
+    "skillIds": ["csharp", "linq"]
+  },
+  {
+    "id": "tsql-stored-proc-2023",
+    "titleTr": "İleri Düzey Transact-SQL ve Saklı Yordam Programlama",
+    "titleEn": "Advanced Transact-SQL and Stored Procedure Programming",
+    "issuer": "Codecademy",
+    "year": "2023",
+    "category": "database",
+    "skillIds": ["tsql", "mssql"]
+  },
+  {
+    "id": "sqlserver-azure-2023",
+    "titleTr": "Veri Analizi ve Optimizasyon için SQL Server & Azure SQL",
+    "titleEn": "SQL Server & Azure SQL for Data Analysis and Optimization",
+    "issuer": "Microsoft Learn",
+    "year": "2023",
+    "category": "database",
+    "skillIds": ["mssql", "azure-sql"]
+  },
+  {
+    "id": "db-design-tsql-2023",
+    "titleTr": "T-SQL ile Veritabanı Tasarımı ve Sorgu Optimizasyonu",
+    "titleEn": "Database Design and Query Optimization with T-SQL",
+    "issuer": "Microsoft Learn",
+    "year": "2023",
+    "category": "database",
+    "skillIds": ["tsql", "mssql"]
+  },
+  {
+    "id": "frontend-eng-ui-2023",
+    "titleTr": "Mühendislik Arayüzleri için Front-End Geliştirme (HTML5, CSS3, JavaScript, Bootstrap)",
+    "titleEn": "Front-End Development for Engineering Interfaces (HTML5, CSS3, JavaScript, Bootstrap)",
+    "issuer": "Udemy",
+    "year": "2023",
+    "category": "frontend",
+    "skillIds": ["html", "css", "js", "bootstrap"]
+  },
+  {
+    "id": "git-github-2023",
+    "titleTr": "İşbirlikçi Projelerde Sürüm Kontrolü için Git ve GitHub",
+    "titleEn": "Git and GitHub for Version Control in Collaborative Projects",
+    "issuer": "BTK Akademi",
+    "year": "2023",
+    "category": "tool",
+    "skillIds": []
+  },
+  {
+    "id": "aspnet-restapi-2024",
+    "titleTr": "ASP.NET Core MVC ile RESTful API Geliştirme",
+    "titleEn": "RESTful API Development using ASP.NET Core MVC",
+    "issuer": "LinkedIn Learning",
+    "year": "2024",
+    "category": "framework",
+    "skillIds": ["aspnet-mvc", "dotnet"]
+  },
+  {
+    "id": "design-patterns-solid-2024",
+    "titleTr": "Ölçeklenebilir Sistemler için Yazılım Tasarım Desenleri (SOLID, GoF)",
+    "titleEn": "Software Design Patterns for Scalable Systems (SOLID, GoF)",
+    "issuer": "Coursera",
+    "year": "2024",
+    "category": "pattern",
+    "skillIds": ["solid"]
+  },
+  {
+    "id": "clean-arch-di-2024",
+    "titleTr": ".NET Projelerinde Clean Architecture ve Dependency Injection",
+    "titleEn": "Clean Architecture and Dependency Injection in .NET Projects",
+    "issuer": "Pluralsight",
+    "year": "2024",
+    "category": "pattern",
+    "skillIds": ["dotnet", "solid", "layered"]
+  },
+  {
+    "id": "microservices-docker-2024",
+    "titleTr": "Mikroservis Mimarisi ve Docker Konteynerleştirme",
+    "titleEn": "Microservice Architecture and Docker Containerization",
+    "issuer": "BTK Akademi",
+    "year": "2024",
+    "category": "tool",
+    "skillIds": ["docker"]
+  },
+  {
+    "id": "dotnet-developer-2024",
+    "titleTr": ".NET Geliştirici Programı",
+    "titleEn": ".NET Developer Program",
+    "issuer": "I-Akademi / Microsoft",
+    "year": "2024",
+    "category": "framework",
+    "skillIds": ["dotnet", "csharp"]
+  },
+  {
+    "id": "claude-academy-2026",
+    "titleTr": "Anthropic Claude Akademisi — Tüm Kurs Tamamlama",
+    "titleEn": "Anthropic Claude Academy — All Course Completion",
+    "issuer": "Anthropic",
+    "year": "2026",
+    "category": "ai",
+    "skillIds": []
+  },
+  {
+    "id": "sqldb-tsql-2024",
+    "titleTr": "SQL Veritabanı Geliştirme & Transact-SQL ile Veri Sorgulama",
+    "titleEn": "Developing SQL Database & Querying Data with Transact-SQL",
+    "issuer": "I-Akademi / Microsoft",
+    "year": "2024",
+    "category": "database",
+    "skillIds": ["mssql", "tsql"]
+  }
+]

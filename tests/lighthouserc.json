@@ -1,0 +1,33 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://127.0.0.1:8765/",
+        "http://127.0.0.1:8765/about.html",
+        "http://127.0.0.1:8765/skills.html",
+        "http://127.0.0.1:8765/projects.html",
+        "http://127.0.0.1:8765/cv.html",
+        "http://127.0.0.1:8765/contact.html"
+      ],
+      "startServerCommand": "python -m http.server 8765 --bind 127.0.0.1 --directory ..",
+      "startServerReadyPattern": "Serving HTTP",
+      "numberOfRuns": 1,
+      "settings": {
+        "preset": "desktop",
+        "throttlingMethod": "simulate",
+        "skipAudits": ["uses-http2", "redirects-http"]
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.95 }],
+        "categories:accessibility": ["error", { "minScore": 0.95 }],
+        "categories:best-practices": ["error", { "minScore": 0.95 }],
+        "categories:seo": ["error", { "minScore": 0.95 }]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}

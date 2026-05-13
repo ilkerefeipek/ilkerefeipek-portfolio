@@ -1,0 +1,27 @@
+[
+  {
+    "id": "izmir-economics",
+    "displayOrder": 1,
+    "institutionTr": "İzmir Ekonomi Üniversitesi",
+    "institutionEn": "Izmir University of Economics",
+    "degreeTr": "Bilgisayar Programcılığı (Önlisans)",
+    "degreeEn": "Associate Degree in Computer Programming",
+    "startYear": "2023",
+    "endYear": null,
+    "isCurrent": true,
+    "gpa": "3.32",
+    "gpaScale": "4.00",
+    "highlightsTr": [
+      "İngilizce hazırlık programını yarım dönemde tamamladı (dil yeterlilik sınavını geçerek).",
+      "1. yıl içinde profesyonel yazılım geliştirme stajı tamamlandı.",
+      "2. yıl güz dönemine başlamak üzere."
+    ],
+    "highlightsEn": [
+      "Completed the English preparatory program in half a semester (passed the language qualification exam early).",
+      "Completed a professional software development internship within the first academic year.",
+      "Starting the second-year fall semester."
+    ],
+    "locationTr": "İzmir, Türkiye",
+    "locationEn": "Izmir, Türkiye"
+  }
+]

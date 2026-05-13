@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="İlker Efe İpek Portfolio">
+  <defs>
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F0B14"/>
+      <stop offset="100%" stop-color="#19161D"/>
+    </linearGradient>
+    <pattern id="ogGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#AB9FF2" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+    <linearGradient id="ogAvatar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AB9FF2"/>
+      <stop offset="100%" stop-color="#FF6B9D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#ogGrid)"/>
+
+  <!-- Eyebrow -->
+  <text x="80" y="140" font-family="JetBrains Mono, ui-monospace, monospace" font-size="20" fill="#AB9FF2" letter-spacing="3" opacity="0.85">// PORTFOLIO</text>
+
+  <!-- Name -->
+  <text x="80" y="240" font-family="Inter, system-ui, sans-serif" font-size="84" font-weight="800" fill="#FFFFFF" letter-spacing="-3">İlker Efe İpek</text>
+
+  <!-- Tagline -->
+  <text x="80" y="320" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="600" fill="#B8B4C6">Backend ve veritabanı odaklı .NET geliştirici.</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="380" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#6B6878">İzmir Ekonomi Üniversitesi · Bilgisayar Programcılığı</text>
+
+  <!-- Layered diagram on right -->
+  <g transform="translate(800 200)" opacity="0.95">
+    <rect x="0"   y="0"   width="320" height="48" rx="6" fill="#232029" stroke="#AB9FF2" stroke-width="1.5" opacity="1"/>
+    <text x="20" y="30" font-family="JetBrains Mono, monospace" font-size="13" fill="#AB9FF2" letter-spacing="2">// PRESENTATION</text>
+
+    <rect x="20"  y="62"  width="300" height="48" rx="6" fill="#232029" stroke="#AB9FF2" stroke-width="1.5" opacity="0.8"/>
+    <text x="40" y="92" font-family="JetBrains Mono, monospace" font-size="13" fill="#AB9FF2" letter-spacing="2">// APPLICATION</text>
+
+    <rect x="40"  y="124" width="280" height="48" rx="6" fill="#232029" stroke="#AB9FF2" stroke-width="1.5" opacity="0.6"/>
+    <text x="60" y="154" font-family="JetBrains Mono, monospace" font-size="13" fill="#AB9FF2" letter-spacing="2">// DOMAIN</text>
+
+    <rect x="60"  y="186" width="260" height="48" rx="6" fill="#232029" stroke="#AB9FF2" stroke-width="1.5" opacity="0.4"/>
+    <text x="80" y="216" font-family="JetBrains Mono, monospace" font-size="13" fill="#AB9FF2" letter-spacing="2">// DATA</text>
+  </g>
+
+  <!-- Footer line -->
+  <text x="80" y="560" font-family="JetBrains Mono, monospace" font-size="16" fill="#6B6878" letter-spacing="2">ilkerefeipek.github.io  ·  Compiled in 4 layers.</text>
+</svg>

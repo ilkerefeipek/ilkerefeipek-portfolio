@@ -1,0 +1,557 @@
+/* ============================================================
+   pages.css — page-specific layouts.
+   Populated as pages are built (Faz 4).
+   ============================================================ */
+
+/* --- index.html ------------------------------------------ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: var(--sp-8);
+  padding-block: var(--sp-16);
+}
+
+@media (min-width: 1024px) {
+  .hero .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--sp-16);
+  }
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--brand-primary);
+  letter-spacing: var(--tracking-mono);
+  text-transform: lowercase;
+  margin-bottom: var(--sp-3);
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: var(--fs-hero);
+  font-weight: 800;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin-bottom: var(--sp-6);
+}
+
+.hero-name .name-char {
+  display: inline-block;
+}
+
+.hero-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: var(--leading-snug);
+  margin-bottom: var(--sp-3);
+  max-width: 30ch;
+}
+
+.hero-subtitle {
+  font-size: var(--fs-lg);
+  color: var(--text-secondary);
+  max-width: 55ch;
+  line-height: var(--leading-relaxed);
+}
+
+.hero-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-6);
+  margin-block: var(--sp-8);
+  padding: var(--sp-4) 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hero-metric {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.hero-metric-value {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-metric-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+}
+
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.arch-diagram-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.arch-diagram {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  filter: drop-shadow(0 32px 64px rgba(0, 0, 0, 0.4));
+}
+
+@media (max-width: 767px) {
+  .arch-diagram { max-width: 280px; }
+  .arch-diagram-wrapper { min-height: 280px; }
+}
+
+.featured-project {
+  position: relative;
+}
+
+.featured-project-grid {
+  display: grid;
+  gap: var(--sp-8);
+}
+
+@media (min-width: 768px) {
+  .featured-project-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.featured-project-title { margin-top: var(--sp-3); }
+.featured-project-summary { margin-top: var(--sp-3); color: var(--text-secondary); }
+.featured-project-stack { margin-top: var(--sp-4); }
+.featured-project-cta { margin-top: var(--sp-6); }
+
+.capabilities-grid {
+  display: grid;
+  gap: var(--sp-6);
+}
+
+@media (min-width: 768px) {
+  .capabilities-grid {
+    /* Sprint 15: minmax(0, 1fr) prevents min-content overflow expanding the
+       first card when its descriptor (or counter glyph width) is wider than
+       the share allocated by `1fr`. With auto-minimum (default), columns can
+       grow beyond 1fr to fit content; minmax(0, 1fr) forces equal columns
+       and lets text wrap inside. */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.cta-banner {
+  background: linear-gradient(135deg, var(--brand-a06), rgba(255, 107, 157, 0.04));
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-12);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-banner { padding: var(--sp-16); }
+}
+
+/* --- about.html ------------------------------------------ */
+
+.about-grid {
+  display: grid;
+  gap: var(--sp-12);
+}
+
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.about-bio p + p { margin-top: var(--sp-4); }
+
+.about-meta-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+  position: sticky;
+  top: var(--sp-24);
+  align-self: start;
+}
+
+@media (max-width: 1023px) {
+  .about-meta-card { position: static; }
+}
+
+.languages-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.language-pill {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  min-width: 96px;
+}
+
+.language-pill-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: var(--fs-sm);
+}
+
+.language-pill-level {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--brand-primary);
+  letter-spacing: var(--tracking-mono);
+}
+
+/* --- skills.html — certificates + soft-skills (bento lives in skills.css) --- */
+
+.certificates-list {
+  display: grid;
+  gap: var(--sp-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certificate-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--sp-4);
+  padding: var(--sp-4);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  align-items: center;
+}
+
+.certificate-year {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--brand-primary);
+  letter-spacing: var(--tracking-mono);
+}
+
+.certificate-title {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.certificate-issuer {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sp-4);
+}
+
+/* --- projects.html --------------------------------------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-8);
+  overflow: hidden;
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-3);
+}
+
+.project-card-year {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  letter-spacing: var(--tracking-mono);
+}
+
+.project-card-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--sp-2);
+}
+
+.project-card-architecture {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--brand-primary);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  margin-bottom: var(--sp-4);
+}
+
+.project-card-summary {
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-6);
+}
+
+.project-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-6);
+}
+
+.project-card-actions {
+  display: flex;
+  gap: var(--sp-2);
+  margin-top: auto;
+}
+
+.modal-project-features,
+.modal-project-learnings {
+  margin-top: var(--sp-6);
+}
+
+.modal-project-features ul,
+.modal-project-learnings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-project-features li,
+.modal-project-learnings li {
+  position: relative;
+  padding-left: var(--sp-6);
+  margin-bottom: var(--sp-3);
+  color: var(--text-secondary);
+}
+
+.modal-project-features li::before,
+.modal-project-learnings li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--brand-primary);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+/* --- Language-driven visibility (no-FOUC, no-CLS) -------
+   lang-init.js sets <html lang> synchronously in <head> BEFORE body parses,
+   so we can pre-style the inactive cv-content block (avoiding the layout
+   shift when JS later toggles via [hidden]). The :is() bumps specificity
+   over the [hidden] user-agent rule.
+-------------------------------------------------------- */
+
+html[lang='en'] :is([data-cv-lang='tr']) { display: none !important; }
+html[lang='en'] :is([data-cv-lang='en'][hidden]) { display: revert !important; }
+html[lang='tr'] :is([data-cv-lang='en']) { display: none !important; }
+html[lang='tr'] :is([data-cv-lang='tr'][hidden]) { display: revert !important; }
+
+/* --- cv.html --------------------------------------------- */
+
+.cv-controls {
+  position: sticky;
+  /* Sprint 14: track LIVE nav-bar height so scrolled-state nav shrink
+     doesn't leave a gap above this sticky bar. Falls back to static
+     --nav-height when JS hasn't set the current value yet (pre-hydration). */
+  top: var(--nav-height-current, var(--nav-height));
+  background: rgba(15, 11, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-block: var(--sp-3);
+  margin-bottom: var(--sp-4);
+  z-index: calc(var(--z-nav) - 1);
+  transition: top var(--dur-std) var(--ease-out-expo);
+}
+
+.cv-controls .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cv-controls-actions {
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.cv-page {
+  max-width: 800px;
+  margin-inline: auto;
+  /* Sprint 11 Bug 2: cv-controls bar acts as visual header — override .section
+     default padding-block (sp-16/sp-24) to eliminate the ~144px dead gap
+     between the controls bar and the CV title. */
+  padding-block: var(--sp-4) var(--sp-16);
+}
+
+@media (min-width: 768px) {
+  .cv-page { padding-block: var(--sp-6) var(--sp-24); }
+}
+
+.cv-section {
+  margin-bottom: var(--sp-12);
+}
+
+.cv-section-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--sp-2);
+  margin-bottom: var(--sp-4);
+}
+
+@media print {
+  .cv-controls { display: none; }
+  .cv-page { max-width: none; padding: 0; }
+  .cv-section { margin-bottom: 0.4cm; }
+  .cv-section-title { font-size: 13pt; margin-bottom: 0.2cm; padding-bottom: 0.1cm; }
+  .cv-section h1 { font-size: 22pt; margin-bottom: 0.1cm; }
+  .cv-section p, .cv-section li { font-size: 10pt; line-height: 1.35; }
+  .cv-section ul { margin-top: 0.15cm; padding-left: 0.6cm; }
+  .cv-section ul li { margin-bottom: 0.05cm; }
+  .cv-section article { margin-bottom: 0.3cm; }
+  .cv-section .divider, hr.divider { display: none; }
+  /* Multi-column for the certificates list to compress vertical space */
+  #certificates ul { columns: 2; column-gap: 0.6cm; }
+  #certificates li { break-inside: avoid; }
+  body { padding: 1cm 1cm; font-size: 10pt; }
+}
+
+/* --- contact.html ---------------------------------------- */
+
+.contact-grid {
+  display: grid;
+  gap: var(--sp-12);
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--sp-16);
+  }
+}
+
+.contact-direct {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+}
+
+.contact-method-icon {
+  width: 36px; height: 36px;
+  border-radius: var(--radius-md);
+  background: var(--brand-a10);
+  display: grid;
+  place-items: center;
+  color: var(--brand-primary);
+  flex-shrink: 0;
+}
+
+.contact-method-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  margin-bottom: var(--sp-1);
+}
+
+.contact-method-value {
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.contact-method-value a { color: var(--text-primary); }
+.contact-method-value a:hover { color: var(--brand-primary); }
+
+/* --- 404.html -------------------------------------------- */
+
+.notfound {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: var(--sp-16);
+  gap: var(--sp-6);
+}
+
+.notfound-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+}
+
+.notfound-code {
+  font-family: var(--font-mono);
+  color: var(--brand-primary);
+  font-size: var(--fs-2xl);
+  letter-spacing: var(--tracking-mono);
+}

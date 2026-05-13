@@ -1,0 +1,42 @@
+[
+  {
+    "code": "tr",
+    "nameTr": "Türkçe",
+    "nameEn": "Turkish",
+    "levelKey": "native",
+    "levelTr": "Anadil",
+    "levelEn": "Native",
+    "cefr": null,
+    "displayOrder": 1
+  },
+  {
+    "code": "en",
+    "nameTr": "İngilizce",
+    "nameEn": "English",
+    "levelKey": "professional",
+    "levelTr": "Profesyonel iş seviyesi",
+    "levelEn": "Professional working proficiency",
+    "cefr": "C1",
+    "displayOrder": 2
+  },
+  {
+    "code": "de",
+    "nameTr": "Almanca",
+    "nameEn": "German",
+    "levelKey": "elementary",
+    "levelTr": "Temel seviye",
+    "levelEn": "Elementary",
+    "cefr": "A2",
+    "displayOrder": 3
+  },
+  {
+    "code": "fr",
+    "nameTr": "Fransızca",
+    "nameEn": "French",
+    "levelKey": "beginner",
+    "levelTr": "Başlangıç seviyesi",
+    "levelEn": "Beginner",
+    "cefr": "A1",
+    "displayOrder": 4
+  }
+]
