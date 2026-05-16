@@ -6,6 +6,9 @@ const BASE_URL = `http://127.0.0.1:${PORT}`;
 
 export default defineConfig({
   testDir: './e2e',
+  // Sprint 20: PDF generator is a maintenance utility, not a regression test.
+  // Run explicitly: `npx playwright test e2e/generate-pdfs.spec.ts --project=chromium-desktop`
+  testIgnore: [/generate-pdfs\.spec/],
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 1,
@@ -39,22 +42,22 @@ export default defineConfig({
     {
       name: 'chromium-tablet',
       use: { ...devices['Desktop Chrome'], viewport: { width: 768, height: 1024 } },
-      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/],
+      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/, /generate-pdfs\.spec/],
     },
     {
       name: 'chromium-mobile',
       use: { ...devices['Desktop Chrome'], viewport: { width: 375, height: 667 } },
-      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/],
+      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/, /generate-pdfs\.spec/],
     },
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'], viewport: { width: 1440, height: 900 } },
-      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/],
+      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/, /generate-pdfs\.spec/],
     },
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'], viewport: { width: 1440, height: 900 } },
-      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/],
+      testIgnore: [/audit\//, /accessibility\.spec/, /dead-links\.spec/, /generate-pdfs\.spec/],
     },
   ],
 
