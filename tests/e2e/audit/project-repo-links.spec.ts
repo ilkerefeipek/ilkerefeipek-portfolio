@@ -12,9 +12,9 @@ const EXPECTED_REPOS = [
     url: 'https://github.com/ilkerefeipek/proje2',
   },
   {
-    project: 'Event Registration',
-    cardId: 'event-registration',
-    url: 'https://github.com/ilkerefeipek/proje3',
+    project: 'EduExam',
+    cardId: 'eduexam',
+    url: 'https://github.com/ilkerefeipek/eduexam',
   },
 ];
 
