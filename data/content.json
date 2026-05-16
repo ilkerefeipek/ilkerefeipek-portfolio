@@ -13,7 +13,7 @@
     "projectRepos": {
       "stockManagement": "https://github.com/ilkerefeipek/proje1",
       "ecommerceDb": "https://github.com/ilkerefeipek/proje2",
-      "eventRegistration": "https://github.com/ilkerefeipek/proje3",
+      "eduexam": "https://github.com/ilkerefeipek/eduexam",
       "portfolio": "https://github.com/ilkerefeipek/ilkerefeipek-portfolio"
     },
     "web3formsKey": "e5b1b57e-dd08-43b6-8c21-451289e9dab6"
@@ -31,7 +31,7 @@
       "homeDescription": "Katmanlı mimari ve veritabanı tasarımı odaklı .NET geliştirici. Proje portföyü, beceriler, CV ve iletişim.",
       "aboutDescription": "İzmir Ekonomi Üniversitesi öğrencisi, .NET geliştirici. Eğitim, staj deneyimleri, ilgi alanları ve yaklaşım.",
       "skillsDescription": "C#, .NET Core, SQL Server, ASP.NET MVC, Layered Architecture, Repository Pattern. 15 sertifika.",
-      "projectsDescription": "Stock Management System, E-Commerce DB, Event Registration ve daha fazlası. Mimari, teknoloji ve sonuçlar.",
+      "projectsDescription": "Stock Management System, E-Commerce DB, EduExam ve daha fazlası. Mimari, teknoloji ve sonuçlar.",
       "cvDescription": "Türkçe ve İngilizce CV — online görüntüle veya PDF olarak indir.",
       "contactDescription": "E-posta, telefon, LinkedIn, GitHub. Mesaj formu (Web3Forms).",
       "notFoundDescription": "Aradığınız sayfa bulunamadı."
@@ -140,7 +140,7 @@
         "js": "Frontend interaktivite. Vanilla DOM, fetch, IntersectionObserver.",
         "html": "Semantik markup, ARIA, form validation.",
         "css": "Grid, flexbox, custom properties, container queries.",
-        "php": "Event Registration System projesinde web backend dili. Form handling, MySQL bağlantısı.",
+        "php": "EduExam online sınav platformunda web backend dili. Rol bazlı oturum, form akışı, MySQL bağlantısı.",
         "python": "Veri işleme + automation + script geliştirme. Akademik projelerde data analysis.",
         "java": "OOP temelleri + cross-platform alıştırmalar. Akademik müfredat üzerinden.",
         "linq": "Collection sorgulama + EF Core query composition.",
@@ -288,7 +288,7 @@
       "homeDescription": "Backend & database-focused .NET developer building with layered architecture and SQL Server. Projects, skills, CV and contact.",
       "aboutDescription": "Computer Programming student at Izmir University of Economics, .NET developer. Education, internships, interests and approach.",
       "skillsDescription": "C#, .NET Core, SQL Server, ASP.NET MVC, Layered Architecture, Repository Pattern. 15 certifications.",
-      "projectsDescription": "Stock Management System, E-Commerce DB, Event Registration and more. Architecture, technology and outcomes.",
+      "projectsDescription": "Stock Management System, E-Commerce DB, EduExam and more. Architecture, technology and outcomes.",
       "cvDescription": "CV in Turkish and English — view online or download as PDF.",
       "contactDescription": "Email, phone, LinkedIn, GitHub. Message form (Web3Forms).",
       "notFoundDescription": "The page you're looking for could not be found."
@@ -397,7 +397,7 @@
         "js": "Frontend interactivity. Vanilla DOM, fetch, IntersectionObserver.",
         "html": "Semantic markup, ARIA, form validation.",
         "css": "Grid, flexbox, custom properties, container queries.",
-        "php": "Web backend language in the Event Registration System project. Form handling, MySQL integration.",
+        "php": "Web backend language in the EduExam online exam platform. Role-based sessions, form flows, MySQL integration.",
         "python": "Data processing, automation, scripting. Academic projects in data analysis.",
         "java": "OOP fundamentals + cross-platform exercises. Through academic curriculum.",
         "linq": "Collection queries + EF Core query composition.",

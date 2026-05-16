@@ -88,48 +88,48 @@
     "imageAltEn": "E-Commerce database schema diagram"
   },
   {
-    "id": "event-registration",
+    "id": "eduexam",
     "displayOrder": 3,
     "featured": false,
-    "year": "2023",
-    "titleTr": "Etkinlik Kayıt ve Yönetim Sistemi",
-    "titleEn": "Event Registration & Management System",
-    "stack": ["PHP", "MySQL", "HTML", "CSS"],
-    "skillIds": ["sql", "html", "css", "mvc"],
-    "architecture": "Session-based · MVC pattern",
-    "summaryTr": "Kullanıcı kaydı ve yönetici etkinlik kontrolü destekleyen üniversite etkinlik platformu.",
-    "summaryEn": "University event platform supporting user registration and administrator event control.",
-    "descriptionTr": "PHP ve MySQL ile geliştirilen, web tabanlı bir üniversite etkinlik platformu. Kullanıcılar yaklaşan etkinlikleri görüntüleyip kayıt olabilir; yöneticiler korumalı bir panel üzerinden etkinlik ekleyebilir, düzenleyebilir veya silebilir.",
-    "descriptionEn": "A web-based university event platform built with PHP and MySQL. Users browse and register for upcoming events while administrators can add, edit or delete events through a protected panel.",
+    "year": "2024",
+    "titleTr": "EduExam — Online Sınav Platformu",
+    "titleEn": "EduExam — Online Examination Platform",
+    "stack": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+    "skillIds": ["php", "sql", "javascript", "html", "css"],
+    "architecture": "Role-based auth · Server-rendered + JS interactions",
+    "summaryTr": "Öğretmenlerin sınav oluşturduğu, öğrencilerin online çözüp anında sonuç görebildiği eğitim sınav platformu.",
+    "summaryEn": "An online exam platform where teachers create assessments and students complete them with instant results.",
+    "descriptionTr": "PHP, MySQL ve JavaScript ile geliştirilen bir online sınav platformu. Öğretmenler soru bankasından sınav oluşturup öğrencilere atayabilir; öğrenciler atanan sınavları çözüp sonuçlarını ve geçmiş performanslarını görüntüleyebilir. Otomatik puanlama ve rol bazlı erişim kontrolü içerir.",
+    "descriptionEn": "An online examination platform built with PHP, MySQL and JavaScript. Teachers build assessments from a question bank and assign them to students; students complete the exams and view their results and historical performance. Includes automatic grading and role-based access control.",
     "featuresTr": [
-      "Oturum tabanlı (session-based) kullanıcı kimlik doğrulama",
-      "Form doğrulamalı MySQL entegrasyonu",
-      "Dinamik etkinlik listeleme ve filtreleme",
-      "Güvenli POST/GET işleme",
-      "Etkinlik verilerini yönetmek için yönetici paneli"
+      "Öğretmen rolü: sınav oluşturma, soru bankası yönetimi, öğrenci atama",
+      "Öğrenci rolü: online sınav çözme, sonuç ve geçmiş görüntüleme",
+      "Çoktan seçmeli soru tipi ve otomatik puanlama",
+      "Oturum tabanlı (session-based) rol bazlı erişim kontrolü",
+      "MySQL ile sınav, soru ve sonuç verilerinin kalıcı yönetimi"
     ],
     "featuresEn": [
-      "Session-based user authentication",
-      "MySQL integration with form validation",
-      "Dynamic event listing and filtering",
-      "Secure POST/GET handling",
-      "Admin panel for managing event data"
+      "Teacher role: build exams, manage question bank, assign to students",
+      "Student role: take exams online, view results and history",
+      "Multiple-choice questions with automatic grading",
+      "Session-based role authorization (teacher vs student)",
+      "MySQL persistence for exams, questions and results"
     ],
     "learningsTr": [
-      "Session yönetiminde XSS ve CSRF temellerini uygulama",
-      "MVC paradigmasında controller-view ayrımı",
-      "Form doğrulama akışlarının server-side disiplinlenmesi"
+      "Rol bazlı yetkilendirmenin server-side disiplinlenmesi",
+      "MVC benzeri görev ayrımı: oturum yönetimi, sınav mantığı, görüntüleme",
+      "JavaScript ile form akışını iyileştirip backend doğrulamayı koruma"
     ],
     "learningsEn": [
-      "Applying XSS and CSRF basics in session management",
-      "Controller-view separation in the MVC paradigm",
-      "Server-side discipline for form validation flows"
+      "Server-side discipline for role-based authorization",
+      "MVC-style separation: session, exam logic, presentation",
+      "Enhancing form UX with JavaScript while keeping server-side validation"
     ],
     "githubUrl": "PLACEHOLDER",
     "demoUrl": null,
     "imagePath": "assets/images/projects/placeholder.svg",
-    "imageAltTr": "Etkinlik Kayıt Sistemi yönetici paneli",
-    "imageAltEn": "Event Registration System admin panel"
+    "imageAltTr": "EduExam online sınav platformu yönetici paneli",
+    "imageAltEn": "EduExam online examination platform admin panel"
   },
   {
     "id": "portfolio",
