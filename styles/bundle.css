@@ -1875,6 +1875,10 @@ html[lang='tr'] :is([data-cv-lang='tr'][hidden]) { display: revert !important; }
   .cv-section ul li { margin-bottom: 0.05cm; }
   .cv-section article { margin-bottom: 0.3cm; }
   .cv-section .divider, hr.divider { display: none; }
+  /* Sprint 20: Projects section is web-only â€” kept off the printed/PDF CV
+     so the document stays compact and matches a classical CV layout.
+     Recruiters still see the projects on the live web page. */
+  .cv-projects-section { display: none !important; }
   /* Multi-column for the certificates list to compress vertical space */
   #certificates ul { columns: 2; column-gap: 0.6cm; }
   #certificates li { break-inside: avoid; }
